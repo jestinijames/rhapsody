@@ -31,7 +31,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/lib/layout-children.ts",
-    "src/context-api/map-direction-provider.jss"
+    "src/context-api/map-direction-provider.jss",
+    "src/components/ui/scroll-circletsx"
   ],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]

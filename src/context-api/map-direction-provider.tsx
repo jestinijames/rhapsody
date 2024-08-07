@@ -1,15 +1,8 @@
-import React, { createContext, ReactNode, useState } from 'react';
+import React, { createContext, useState } from 'react';
 
-interface MapContextType {
-  mapDirection: [number, number];
-  setMapDirection: React.Dispatch<React.SetStateAction<[number, number]>>;
-}
+import { MapContextType, MapDirectionProviderProps } from '@/types/types';
 
 export const MapContext = createContext<MapContextType | null>(null);
-
-interface MapDirectionProviderProps {
-  children: ReactNode;
-}
 
 const MapDirectionProvider: React.FC<MapDirectionProviderProps> = ({
   children,

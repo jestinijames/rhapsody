@@ -61,6 +61,12 @@ body {
     --primary: #253b2f;
     --primary-foreground: #253b2f;
 
+    --primary-rhapsody: #d67d29;
+    --primary-foreground-rhapsody: #ffebd9;
+
+    --secondary-rhapsody: #055259;
+    --secondary-foreground-rhapsody: #037073;
+
     --secondary: #d2e0d9;
     --secondary-foreground: #d2e0d9;
 

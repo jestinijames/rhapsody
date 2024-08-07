@@ -5,9 +5,7 @@ import { Toaster } from 'react-hot-toast';
 
 import MapDirectionProvider from '@/context-api/map-direction-provider';
 
-interface LayoutChildrenProps {
-  children: React.ReactNode;
-}
+import { LayoutChildrenProps } from '@/types/types';
 
 const LayoutChildren: React.FC<LayoutChildrenProps> = ({ children }) => {
   return (

@@ -7,7 +7,8 @@ import '@/styles/globals.css';
 
 import LayoutChildren from '@/lib/layout-children';
 
-import ProgressCircle from '@/components/ui/scrollCircle';
+import PageLoader from '@/components/ui/page-loader';
+import ProgressCircle from '@/components/ui/scroll-circle';
 
 import { siteConfig } from '@/constant/config';
 
@@ -69,7 +70,9 @@ export default function RootLayout({
           </div>
           {/* ------ body line end */}
           <ProgressCircle />
-          <LayoutChildren>{children}</LayoutChildren>
+          <LayoutChildren>
+            <PageLoader>{children}</PageLoader>
+          </LayoutChildren>
         </div>
       </body>
     </html>

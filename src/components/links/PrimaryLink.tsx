@@ -2,14 +2,11 @@ import * as React from 'react';
 
 import { cn } from '@/lib/utils';
 
-import UnstyledLink, {
-  UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+import UnstyledLink from '@/components/links/UnstyledLink';
 
-const PrimaryLinkVariant = ['primary', 'basic'] as const;
-type PrimaryLinkProps = {
-  variant?: (typeof PrimaryLinkVariant)[number];
-} & UnstyledLinkProps;
+import { PrimaryLinkProps } from '@/types/types';
+
+//const PrimaryLinkVariant = ['primary', 'basic'] as const;
 
 const PrimaryLink = React.forwardRef<HTMLAnchorElement, PrimaryLinkProps>(
   ({ className, children, variant = 'primary', ...rest }, ref) => {
