@@ -2,7 +2,7 @@
 import React from 'react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { PaginationOptions } from 'swiper/types';
+import { PaginationOptions } from 'swiper/types/modules/pagination';
 import 'swiper/css';
 
 import ProgressAndNavigation from '@/components/ui/craft/progress-and-navigation';
