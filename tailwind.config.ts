@@ -1,9 +1,23 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
-export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+const config = {
+  darkMode: ['class'],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+  ],
+  prefix: '',
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       fontFamily: {
         primary: ['var(--font-farro)', ...defaultTheme.fontFamily.sans],
@@ -48,11 +62,14 @@ export default {
       },
       colors: {
         border: 'var(--border)',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
         background: 'var(--background)',
         gray: 'var(--rgba-color)',
         primary_rgba: 'var(--primary-rgba)',
         secondary_rgba: 'var(--secondary-rgba)',
         overlay: 'var(--overlay)',
+        foreground: 'hsl(var(--foreground))',
         primary: {
           DEFAULT: 'var(--primary)',
           foreground: 'var(--primary-foreground)',
@@ -61,8 +78,24 @@ export default {
           DEFAULT: 'var(--secondary)',
           foreground: 'var(--secondary-foreground)',
         },
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
+        },
         muted: {
           DEFAULT: 'var(--muted)',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
         },
       },
       borderRadius: {
@@ -113,3 +146,5 @@ export default {
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
+
+export default config;

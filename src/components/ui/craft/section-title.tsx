@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
-import ButtonOutline from '@/components/ui/button-outline';
+import { Button } from '@/components/ui/button';
 
 import RightArrow from '@/assets/icons/right-arrow';
 
@@ -91,13 +91,14 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
               <Link href={link || '#'}>
                 {' '}
                 {/* Handle missing link */}
-                <ButtonOutline
+                <Button
+                  variant='boutline'
                   className={cn(
                     `2sm:px-10 px-3 after:left-0 after:${bg_muted}`
                   )}
                 >
                   {button_text} <RightArrow height='22' width='35' />{' '}
-                </ButtonOutline>
+                </Button>
               </Link>
             )}
           </div>

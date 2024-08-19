@@ -1,8 +1,8 @@
+import feedback_bg from '@/assets/images/feedback-image.jpg';
 import img_1 from '@/assets/images/gallery-1.jpg';
 import img_2 from '@/assets/images/gallery-2.jpg';
 import img_3 from '@/assets/images/gallery-3.jpg';
 import img_4 from '@/assets/images/gallery-4.jpg';
-import menu_image_2 from '@/assets/images/menu-image-2.png';
 
 import { MenuListItem } from '@/types/types';
 
@@ -83,21 +83,15 @@ export const menuList: MenuListItem[] = [
         menus: [
           {
             id: 1,
-            name: 'Residential Design',
-            path: '/service-single',
+            name: 'Piano Classes',
+            path: '/programs/piano',
             desc: 'Everything from concept to completion',
           },
           {
             id: 2,
-            name: 'Commercial Design',
-            path: '/service-single',
-            desc: 'Focuses on optimizing functionality and aesthetics',
-          },
-          {
-            id: 3,
-            name: 'Space Planning',
-            path: '/service-single',
-            desc: 'Maximize the potential of your space',
+            name: 'Guitar Classes',
+            path: '/programs/guitar',
+            desc: 'Everything from concept to completion',
           },
         ],
       },
@@ -106,21 +100,15 @@ export const menuList: MenuListItem[] = [
         menus: [
           {
             id: 4,
-            name: 'Color Consultation',
-            path: '/service-single',
-            desc: 'We help you choose the perfect palette',
+            name: 'Drum Classes',
+            path: '/programs/drums',
+            desc: 'Everything from concept to completion',
           },
           {
             id: 5,
-            name: 'Project Management',
-            path: '/service-single',
-            desc: 'We oversee every detail for a successful project',
-          },
-          {
-            id: 6,
-            name: 'Custom Furnishings',
-            path: '/service-single',
-            desc: 'Elevate your space with unique furnishings',
+            name: 'Violin Classes',
+            path: '/programs/violin',
+            desc: 'Everything from concept to completion',
           },
         ],
       },
@@ -129,10 +117,10 @@ export const menuList: MenuListItem[] = [
         menus: [
           {
             id: 9,
-            name: 'Embark on a Design Journey with Us',
+            name: 'Embark on a Musical Journey with Us',
             path: '#',
             desc: 'Let’s Talk',
-            img: menu_image_2,
+            img: feedback_bg,
           },
         ],
       },
@@ -171,7 +159,7 @@ export const galleryData = [
     img_title: 'Violin',
     img_desc:
       'Experience exceptional violin training, designed to nurture your talent and develop your musical expression.',
-    img: img_3,
+    img: img_4,
     link: '/programs/violin',
   },
   {
@@ -179,7 +167,94 @@ export const galleryData = [
     img_title: 'Drums',
     img_desc:
       'Discover dynamic drumming techniques and rhythms through our engaging, customized drum lessons for all levels.',
-    img: img_4,
+    img: img_3,
     link: '/programs/drums',
+  },
+];
+
+export const growthData = [
+  {
+    id: '01',
+    service_name: 'Grave',
+    service_desc:
+      'Introductory level tailored for beginners, focusing on foundational music skills.',
+    link: '#',
+  },
+  {
+    id: '02',
+    service_name: 'Largo',
+    service_desc:
+      'Early beginner level emphasizing slow, deliberate practice and developing basic techniques.',
+    link: '#',
+  },
+  {
+    id: '03',
+    service_name: 'Lento',
+    service_desc:
+      'Beginner level focusing on slow tempos to build fundamental skills and confidence.',
+    link: '#',
+  },
+  {
+    id: '04',
+    service_name: 'Adagio',
+    service_desc:
+      'Early intermediate stage, introducing slightly faster tempos and nuanced musical expression.',
+    link: '#',
+  },
+  {
+    id: '05',
+    service_name: 'Andante',
+    service_desc:
+      'Intermediate level, developing steady rhythm and deeper understanding of musical phrasing.',
+    link: '#',
+  },
+  {
+    id: '06',
+    service_name: 'Moderato',
+    service_desc:
+      'Mid-intermediate level encouraging balanced tempo, dynamic control, and expressive playing.',
+    link: '#',
+  },
+  {
+    id: '07',
+    service_name: 'Allegretto',
+    service_desc:
+      'Intermediate-advanced stage, focusing on lively tempos and more complex musical pieces.',
+    link: '#',
+  },
+  {
+    id: '08',
+    service_name: 'Allegro Moderato',
+    service_desc:
+      'Advanced intermediate level, combining moderate fast tempo with precision and expression.',
+    link: '#',
+  },
+  {
+    id: '09',
+    service_name: 'Allegro',
+    service_desc:
+      'Advanced level, emphasizing fast tempos, technical skills, and expressive performance.',
+    link: '#',
+  },
+  {
+    id: '10',
+    service_name: 'Vivace',
+    service_desc:
+      'High advanced stage, focusing on vibrant tempos, agility, and energetic performance.',
+    link: '#',
+  },
+  {
+    id: '11',
+    service_name: 'Allegro Vivace',
+    service_desc:
+      'Expert level, blending fast tempos with vivacious expression and technical mastery.',
+    link: '#',
+  },
+  {
+    id: '12',
+    service_name: 'Presto',
+    service_desc:
+      'Mastery level, showcasing rapid tempos, advanced techniques, and virtuosic performance.',
+    link: '#',
   },
 ];

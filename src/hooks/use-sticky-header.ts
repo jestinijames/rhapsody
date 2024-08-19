@@ -48,13 +48,13 @@ const useStickyHeader = (linkColor?: string) => {
           ) {
             ele.classList.remove('text-white');
             logo?.classList.remove('text-white');
-            other_icon[0].classList.remove('text-white');
-            other_icon[1].classList.remove('text-white');
+            other_icon[0] && other_icon[0]?.classList.remove('text-white');
+            other_icon[1]?.classList.remove('text-white');
           }
           ele.classList.add('text-black');
           logo?.classList.add('text-black');
-          other_icon[0].classList.add('text-black');
-          other_icon[1].classList.add('text-black');
+          other_icon[0] && other_icon[0]?.classList.add('text-black');
+          other_icon[1] && other_icon[1]?.classList.add('text-black');
         }
       });
     }
@@ -91,13 +91,13 @@ const useStickyHeader = (linkColor?: string) => {
           ) {
             ele.classList.remove('text-black');
             logo?.classList.remove('text-black');
-            other_icon[0].classList.remove('text-black');
-            other_icon[1].classList.remove('text-black');
+            other_icon[0] && other_icon[0]?.classList.remove('text-black');
+            other_icon[1] && other_icon[1]?.classList.remove('text-black');
           }
-          ele.classList.add('text-white');
+          ele && ele.classList.add('text-white');
           logo?.classList.add('text-white');
-          other_icon[0].classList.add('text-white');
-          other_icon[1].classList.add('text-white');
+          other_icon[0] && other_icon[0]?.classList.add('text-white');
+          other_icon[1] && other_icon[1]?.classList.add('text-white');
         }
       });
     }

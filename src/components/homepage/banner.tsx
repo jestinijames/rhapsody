@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import ButtonFill from '@/components/ui/button-fill';
-import TextTyped from '@/components/ui/text-typed';
+import { Button } from '@/components/ui/button';
+import TextTyped from '@/components/ui/craft/text-typed';
 
 import RightArrow from '@/assets/icons/right-arrow';
 
@@ -37,13 +37,13 @@ const Banner = () => {
               />
             </h1>
             <Link href='/contact' className='mt-16 inline-block'>
-              <ButtonFill className='sm:px-10 px-4 after:left-0 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground'>
+              <Button className='sm:px-10 px-4 after:left-0 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground'>
                 {' '}
                 Book a free consultation <RightArrow
                   width='35'
                   height='22'
                 />{' '}
-              </ButtonFill>
+              </Button>
             </Link>
           </div>
         </div>

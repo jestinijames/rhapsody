@@ -1,8 +1,6 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-import { Product } from '@/types/types';
-
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
@@ -72,12 +70,4 @@ export function cardSlideAnimationRightDelay() {
     },
   };
   return cardVariants;
-}
-
-// Define the function with type annotations
-export function countCartProductQuantity(products: Product[]): number {
-  return products.reduce(
-    (total, product) => total + (product?.quantity ?? 0),
-    0
-  );
 }

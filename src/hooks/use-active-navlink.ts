@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 
-const useActiveNavLink = (pathName: string, home: string) => {
+const useActiveNavLink = (pathName: string, home?: string) => {
   useEffect(() => {
     const dropdown_item = document.querySelectorAll('.dropdown-item');
     const nav_link = document.querySelectorAll('.nav-link');

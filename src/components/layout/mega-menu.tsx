@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import ButtonFill from '@/components/ui/button-fill';
+import { Button } from '@/components/ui/button';
 
 import { MegaMenuProps } from '@/types/types';
 
 const MegaMenu: React.FC<MegaMenuProps> = ({ dropDownList }) => {
   return (
-    <div className='absolute z-50 left-3/4 -translate-x-1/4 bg-muted flex max-w-[670px] w-full transition-all duration-500 max-h-0 overflow-hidden  group-hover:max-h-[450px] '>
+    <div className='absolute z-50 left-1/2 -translate-x-1/2 bg-primary flex max-w-[1320px] w-full transition-all duration-500 max-h-0 overflow-hidden  group-hover:max-h-[370px] '>
       <div className='flex justify-between flex-wrap'>
         {dropDownList.map(({ menus, id }) => {
           return (
@@ -31,9 +31,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ dropDownList }) => {
                             {name}
                           </p>
                           <Link href={path}>
-                            <ButtonFill className='after:bg-secondary border-secondary text-primary-foreground hover:text-secondary-foreground'>
+                            <Button className='after:bg-secondary border-secondary text-primary-foreground hover:text-secondary-foreground'>
                               {desc}
-                            </ButtonFill>
+                            </Button>
                           </Link>
                         </div>
                       </div>

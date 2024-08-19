@@ -7,8 +7,8 @@ import '@/styles/globals.css';
 
 import LayoutChildren from '@/lib/layout-children';
 
-import PageLoader from '@/components/ui/page-loader';
-import ProgressCircle from '@/components/ui/scroll-circle';
+import PageLoader from '@/components/ui/craft/page-loader';
+import ProgressCircle from '@/components/ui/craft/scroll-circle';
 
 import { siteConfig } from '@/constant/config';
 

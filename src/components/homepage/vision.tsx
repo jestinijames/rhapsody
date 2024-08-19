@@ -2,8 +2,8 @@ import { useInView } from 'react-intersection-observer';
 
 import { cn } from '@/lib/utils';
 
-import SectionSidebarImg from '@/components/ui/section-sidebar-img';
-import SectionTitle from '@/components/ui/section-title';
+import SectionSidebarImg from '@/components/ui/craft/section-sidebar-img';
+import SectionTitle from '@/components/ui/craft/section-title';
 
 import about_img from '@/assets/images/about-image.jpg';
 

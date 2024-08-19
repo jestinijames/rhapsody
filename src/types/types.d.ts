@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image'; // Import StaticImageData
+import { ReactElement } from 'react';
 
 interface MegaMenuItem {
   id: number;
@@ -103,4 +104,19 @@ interface SectionTitleProps {
   bg_muted?: string;
   link?: string;
   button_text?: string;
+}
+
+interface ServiceCardProps {
+  id: string;
+  service_name: string;
+  service_desc: string;
+  text_muted?: string;
+  link: string;
+}
+
+interface CardDetailsProps {
+  order: string;
+  position: string;
+  card_desc: ReactElement;
+  card_img: string | StaticImageData; // 'img' can be a URL string or a StaticImageData object
 }

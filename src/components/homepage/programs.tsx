@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-import SectionTitle from '@/components/ui/section-title';
+import SectionTitle from '@/components/ui/craft/section-title';
 
 import { galleryData } from '@/constant/config';
 
@@ -14,7 +14,7 @@ const Programs = ({
   text_muted?: string;
   bg_muted?: string;
 }) => {
-  const [expendItem, setExpendItem] = useState('02');
+  const [expendItem, setExpendItem] = useState('01');
   return (
     <section className='pt-20'>
       <div className='container-fluid '>
