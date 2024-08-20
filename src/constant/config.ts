@@ -71,7 +71,7 @@ export const menuList: MenuListItem[] = [
     megaMenuContent: [],
   },
   {
-    id: 1,
+    id: 2,
     name: 'Services',
     path: '#',
     isDropdown: false,
@@ -256,5 +256,43 @@ export const growthData = [
     service_desc:
       'Mastery level, showcasing rapid tempos, advanced techniques, and virtuosic performance.',
     link: '#',
+  },
+];
+
+export const instruments = [
+  {
+    label: 'Piano',
+    value: 'piano',
+  },
+  {
+    label: 'Guitar',
+    value: 'guitar',
+  },
+  {
+    label: 'Drums',
+    value: 'drums',
+  },
+  {
+    label: 'Violin',
+    value: 'violin',
+  },
+];
+
+export const lessonDuration = [
+  {
+    label: '30 Minutes',
+    value: '30',
+  },
+  {
+    label: '60 Minutes',
+    value: '60',
+  },
+  {
+    label: '90 Minutes',
+    value: '90',
+  },
+  {
+    label: '120 Minutes',
+    value: '120',
   },
 ];
