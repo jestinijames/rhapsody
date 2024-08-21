@@ -14,7 +14,7 @@ import ServicesSlider from '@/components/ui/craft/services-slider';
 
 export default function HomePage() {
   return (
-    <PageLayout>
+    <PageLayout header='1'>
       <main>
         <Banner />
         <Vision />

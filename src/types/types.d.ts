@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { StaticImageData } from 'next/image'; // Import StaticImageData
 import { ReactElement } from 'react';
 
@@ -119,4 +120,17 @@ interface CardDetailsProps {
   position: string;
   card_desc: ReactElement;
   card_img: string | StaticImageData; // 'img' can be a URL string or a StaticImageData object
+}
+
+interface ProjectCardProps {
+  order: string;
+  position: string;
+  focus_areas?: string;
+  college_desc: string;
+  college_img: string | StaticImageData;
+  global_reach?: string;
+  college_name: string;
+  link: string;
+  imageVariants: Record<string, any>; // Adjust the type as needed
+  cardVariants: Record<string, any>; // Adjust the type as needed
 }

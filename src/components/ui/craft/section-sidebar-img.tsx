@@ -22,9 +22,11 @@ const SectionSidebarImg: React.FC<SectionSidebarImgProps> = ({
       <Image
         src={img}
         loading='lazy'
-        width={500} // Set a default width or use a specific width
-        height={300} // Set a default height or use a specific height
+        // width={1080} // Set a default width or use a specific width
+        // height={1080} // Set a default height or use a specific height
+        sizes='auto'
         alt={section_name}
+        className='h-auto sm:min-h-[750px] min-h-[420px] w-auto object-cover'
       />
     </motion.div>
   );

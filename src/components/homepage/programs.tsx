@@ -75,10 +75,11 @@ const Programs = ({
                 src={img}
                 alt={img_title}
                 loading='lazy'
-                layout='responsive'
-                width={750} // Replace with your desired width
-                height={420} // Replace with your desired height
-                className='h-full sm:min-h-[750px] min-h-[420px] w-full object-cover'
+                fill
+                sizes='auto'
+                // width={750} // Replace with your desired width
+                // height={420} // Replace with your desired height
+                className='h-auto sm:min-h-[750px] min-h-[420px] w-auto object-cover'
               />
             </div>
           );

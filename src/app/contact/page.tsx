@@ -4,11 +4,11 @@ import ContactForm from '@/components/contact/contact-form';
 import PageLayout from '@/components/layout';
 import SectionTitle from '@/components/ui/craft/section-title';
 
-import from_img from '@/assets/images/contact-image.jpg';
+import from_img from '@/assets/images/contact.jpg';
 
 export default function ContactPage() {
   return (
-    <PageLayout>
+    <PageLayout header='2'>
       <main>
         <section>
           <div className='container-fluid '>
