@@ -63,17 +63,17 @@ export const menuList: MenuListItem[] = [
       {
         id: 1,
         name: 'Why Us',
-        path: '/why-us',
+        path: '/about/why-us',
       },
       {
         id: 2,
         name: 'Our Faculty',
-        path: '/faculty',
+        path: '/about/faculty',
       },
       {
         id: 3,
-        name: 'FAQ',
-        path: '/faq',
+        name: 'Frequently Asked Questions',
+        path: '/about/frequently-asked-questions',
       },
       // {
       //   id: 4,
@@ -97,13 +97,13 @@ export const menuList: MenuListItem[] = [
           {
             id: 1,
             name: 'Piano Classes',
-            path: '/programs/piano',
+            path: '/services/piano',
             desc: 'Everything from concept to completion',
           },
           {
             id: 2,
             name: 'Guitar Classes',
-            path: '/programs/guitar',
+            path: '/services/guitar',
             desc: 'Everything from concept to completion',
           },
         ],
@@ -114,13 +114,13 @@ export const menuList: MenuListItem[] = [
           {
             id: 4,
             name: 'Drum Classes',
-            path: '/programs/drums',
+            path: '/services/drums',
             desc: 'Everything from concept to completion',
           },
           {
             id: 5,
             name: 'Violin Classes',
-            path: '/programs/violin',
+            path: '/services/violin',
             desc: 'Everything from concept to completion',
           },
         ],
@@ -157,7 +157,7 @@ export const galleryData = [
     img_desc:
       'Unlock your potential with personalized piano lessons, fostering creativity and technical excellence in every student.',
     img: img_1,
-    link: '/programs/piano',
+    link: '/services/piano',
   },
   {
     id: '02',
@@ -165,7 +165,7 @@ export const galleryData = [
     img_desc:
       'Master the guitar with tailored lessons, enhancing your skills and passion for this versatile instrument.',
     img: img_2,
-    link: '/programs/guitar',
+    link: '/services/guitar',
   },
   {
     id: '03',
@@ -173,7 +173,7 @@ export const galleryData = [
     img_desc:
       'Experience exceptional violin training, designed to nurture your talent and develop your musical expression.',
     img: img_4,
-    link: '/programs/violin',
+    link: '/services/violin',
   },
   {
     id: '04',
@@ -181,7 +181,7 @@ export const galleryData = [
     img_desc:
       'Discover dynamic drumming techniques and rhythms through our engaging, customized drum lessons for all levels.',
     img: img_3,
-    link: '/programs/drums',
+    link: '/services/drums',
   },
 ];
 
@@ -365,5 +365,51 @@ export const collegesData = [
     global_reach:
       'ABRSM operates in over 90 countries, making it one of the world`s leading music examination boards, with a robust international presence in Europe, Asia, and beyond.',
     link: 'https://www.abrsm.org/',
+  },
+];
+
+export const faqData = [
+  {
+    id: '1',
+    question: 'What is your cancellation policy?',
+    ans: `
+      If you need to cancel a lesson, simply inform your instructor or email us at least 24 hours in advance, and we will arrange a makeup lesson for you on a different date. However, cancellations made without 24 hours' notice will not be eligible for rescheduling and will not be refunded.
+      `,
+  },
+  {
+    id: '2',
+    question: 'Can I take multiple lessons a week?',
+    ans: `
+      Yes, you can book as many sessions as you like. The minimum commitment is weekly lessons, and we do not offer bi-weekly or monthly single lessons at this time.
+      `,
+  },
+  {
+    id: '3',
+    question: 'How do you take payments?',
+    ans: `
+      We offer a variety of payment methods to make the process as convenient as possible. Payment options will be provided during the registration process or when booking your lessons.
+      `,
+  },
+  {
+    id: '4',
+    question: 'What ages do you teach?',
+    ans: `
+      We welcome students of all ages, from young beginners to adults. Our tailored programs ensure that every student, regardless of age, receives the appropriate level of instruction and support.
+      `,
+  },
+  {
+    id: '5',
+    question: 'Do I need any experience to start?',
+    ans: `
+      No prior experience is required to begin lessons. Whether you're a complete beginner or have some musical background, our instructors will guide you based on your current skill level and goals.
+      `,
+  },
+
+  {
+    id: '6',
+    question: 'Are your teachers/instructors qualified?',
+    ans: `
+    Yes, all our instructors are highly qualified professionals with extensive experience in both teaching and performing. They are passionate about helping students achieve their musical potential.
+    `,
   },
 ];

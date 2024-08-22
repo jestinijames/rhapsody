@@ -10,7 +10,6 @@ import Programs from '@/components/homepage/programs';
 import Vision from '@/components/homepage/vision';
 import WhyUs from '@/components/homepage/why-us';
 import PageLayout from '@/components/layout';
-import ServicesSlider from '@/components/ui/craft/services-slider';
 
 export default function HomePage() {
   return (
@@ -21,7 +20,7 @@ export default function HomePage() {
         <Counter />
         <WhyUs />
         <Programs />
-        <ServicesSlider />
+        {/* <ServicesSlider /> */}
         <Feedback />
       </main>
     </PageLayout>

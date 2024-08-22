@@ -134,3 +134,16 @@ interface ProjectCardProps {
   imageVariants: Record<string, any>; // Adjust the type as needed
   cardVariants: Record<string, any>; // Adjust the type as needed
 }
+
+export type SellerContentItem = {
+  id: string;
+  header: string;
+  description: string;
+};
+
+export interface PricingCardProps {
+  id: string;
+  price: string;
+  minutes: string;
+  features: string[];
+}
