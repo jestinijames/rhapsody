@@ -1,9 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import React from 'react';
 
 import { cardSlideAnimation } from '@/lib/utils';
+
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import { SectionSidebarImgProps } from '@/types/types';
 const SectionSidebarImg: React.FC<SectionSidebarImgProps> = ({
@@ -19,11 +20,10 @@ const SectionSidebarImg: React.FC<SectionSidebarImgProps> = ({
       viewport={{ once: true, amount: 0.2 }}
       className={className}
     >
-      <Image
+      <OptimizedImage
+        useSkeleton
         src={img}
         loading='lazy'
-        // width={1080} // Set a default width or use a specific width
-        // height={1080} // Set a default height or use a specific height
         sizes='auto'
         alt={section_name}
         className='h-auto sm:min-h-[750px] min-h-[420px] w-auto object-cover'

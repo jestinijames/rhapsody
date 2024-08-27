@@ -1,6 +1,5 @@
 'use client';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import {
@@ -11,6 +10,7 @@ import {
 } from '@/lib/utils';
 
 import { Button } from '@/components/ui/button';
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 import SectionTitle from '@/components/ui/craft/section-title';
 
 import RightArrow from '@/assets/icons/right-arrow';
@@ -95,10 +95,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 variants={imageVariants}
                 viewport={{ once: true, amount: 0 }}
               >
-                <Image
+                <OptimizedImage
+                  useSkeleton
                   src={college_img}
                   loading='lazy'
-                  alt='project-img-1'
+                  alt={college_name}
                   fill
                   sizes='auto'
                   className=' h-full'

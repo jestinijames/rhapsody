@@ -1,8 +1,9 @@
-import Image from 'next/image';
+'use client';
 import Link from 'next/link';
 import React from 'react';
 
 import SocialMediaList from '@/components/layout/socials';
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import RightArrow from '@/assets/icons/right-arrow';
 import { servicesData, siteConfig } from '@/constant/config';
@@ -16,7 +17,8 @@ const Footer = () => {
             <div>
               <Link href='' className='text-primary-foreground'>
                 {/* <Logo height='30' width='218' /> */}
-                <Image
+                <OptimizedImage
+                  useSkeleton
                   height='30'
                   width='218'
                   alt='Rhapsody'

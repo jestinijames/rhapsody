@@ -1,7 +1,8 @@
-import Image from 'next/image';
+'use client';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import { MegaMenuProps } from '@/types/types';
 
@@ -20,7 +21,8 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ dropDownList }) => {
                   <li key={id}>
                     {img ? (
                       <div className='relative  mt-12.5 '>
-                        <Image
+                        <OptimizedImage
+                          useSkeleton
                           src={img}
                           alt={name}
                           loading='lazy'

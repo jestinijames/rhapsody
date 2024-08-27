@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
@@ -8,6 +7,7 @@ import { cn } from '@/lib/utils';
 import useOverflowHidden from '@/hooks/use-overflow-hidden';
 
 import Offcanvas from '@/components/layout/off-canvas';
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import MenuIcon from '@/assets/icons/menu-icon';
 import Search from '@/assets/icons/search';
@@ -40,7 +40,8 @@ const MobileNavbar = () => {
         <div className='container-fluid '>
           <div className='flex items-center justify-between py-4'>
             <Link href='/' className='text-primary-foreground'>
-              <Image
+              <OptimizedImage
+                useSkeleton
                 height='31'
                 width='219'
                 alt='Rhapsody'
@@ -55,7 +56,8 @@ const MobileNavbar = () => {
               >
                 <div className='flex justify-between items-center'>
                   <Link href='/' className='text-primary-foreground'>
-                    <Image
+                    <OptimizedImage
+                      useSkeleton
                       height='31'
                       width='219'
                       alt='Rhapsody'

@@ -1,6 +1,9 @@
-import Image, { StaticImageData } from 'next/image'; // Import StaticImageData
+'use client';
+import { StaticImageData } from 'next/image'; // Import StaticImageData
 import Link from 'next/link';
 import React from 'react';
+
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import portfolio_1 from '@/assets/images/portfolio-1.jpg';
 import portfolio_2 from '@/assets/images/portfolio-2.jpg';
@@ -71,7 +74,12 @@ function InstrumentCard({
 }) {
   return (
     <div className='relative hover-underline'>
-      <Image src={img} loading='lazy' alt='portfolio_1' />
+      <OptimizedImage
+        useSkeleton
+        src={img}
+        loading='lazy'
+        alt={instrument_name}
+      />
       <div className='absolute bottom-0 left-0 w-full h-full bg-white-liner flex items-end px-7.5 pb-6'>
         <Link href={link}>
           <span className='md:text-4xl sm:text-3xl text-2xl font-bold'>

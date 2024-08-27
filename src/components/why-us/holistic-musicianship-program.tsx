@@ -22,7 +22,10 @@ const HolisiticMusicianshipProgram = () => {
               <div className='md:-mt-25 -mt-[470px] -mb-25'>
                 <SectionSidebarImg img={about_bg} section_name='about-bg' />
               </div>
-              <div className='max-w-[600px] lg:pt-0 pt-20 lg:pb-0 pb-10'>
+              <div
+                id='howItWorks'
+                className='max-w-[600px] lg:pt-0 pt-20 lg:pb-0 pb-10'
+              >
                 <h2 className='text-secondary-foreground text-3xl 2sm:text-4xl font-bold leading-120 mb-14 max-w-[400px] mt-10'>
                   How It Works
                 </h2>

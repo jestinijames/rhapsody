@@ -1,4 +1,4 @@
-import Image from 'next/image';
+'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -10,6 +10,7 @@ import useStickyHeader from '@/hooks/use-sticky-header';
 import DropDownMenu from '@/components/layout/drop-down-menu';
 import MegaMenu from '@/components/layout/mega-menu';
 import Offcanvas from '@/components/layout/off-canvas';
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import Search from '@/assets/icons/search';
 import { menuList } from '@/constant/config';
@@ -29,7 +30,8 @@ const BottomNavbar = ({ linkColor }: { linkColor?: string }) => {
             href='/'
             className={cn(`logo text-primary-foreground ${linkColor}`)}
           >
-            <Image
+            <OptimizedImage
+              useSkeleton
               height='31'
               width='219'
               alt='Rhapsody'

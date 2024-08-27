@@ -1,12 +1,13 @@
 'use client';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import React, { FC } from 'react';
 
 import {
   cardSlideAnimationRight,
   cardSlideAnimationRightDelay,
 } from '@/lib/utils';
+
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import { CardDetailsProps } from '@/types/types';
 const CardDetails: FC<CardDetailsProps> = ({
@@ -32,7 +33,8 @@ const CardDetails: FC<CardDetailsProps> = ({
                 variants={imageVariants}
                 viewport={{ once: true, amount: 0 }}
               >
-                <Image
+                <OptimizedImage
+                  useSkeleton
                   src={card_img}
                   loading='lazy'
                   alt='card-img-1'

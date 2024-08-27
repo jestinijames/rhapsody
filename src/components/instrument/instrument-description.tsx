@@ -1,7 +1,10 @@
-import Image, { StaticImageData } from 'next/image'; // Import StaticImageData
+'use client';
+import { StaticImageData } from 'next/image'; // Import StaticImageData
 import Link from 'next/link';
 import React from 'react';
 
+import { Button } from '@/components/ui/button';
+import OptimizedImage from '@/components/ui/craft/optimized-image';
 import Title from '@/components/ui/craft/title';
 
 import RightArrow from '@/assets/icons/right-arrow';
@@ -24,7 +27,12 @@ const InstrumentDescription = ({
       <div>
         <div className='container-fluid'>
           <div className=' pt-[94px] pb-[60px] '>
-            <Image src={image} loading='lazy' alt='img' />
+            <OptimizedImage
+              useSkeleton
+              src={image}
+              loading='lazy'
+              alt={title}
+            />
           </div>
         </div>
         <div className='container 2sm:mt-[156px] sm:mt-30 mt-20'>
@@ -105,9 +113,12 @@ const InstrumentDescription = ({
               </li>
             </ul>
             <Link href='/contact'>
-              <button className='flex items-center justify-center gap-3 text-2xl font-bold text-secondary-foreground  border-2 border-secondary  hover:text-primary-foreground px-10 py-[15px] whitespace-nowrap w-full relative after:absolute after:left-0 after:right-0 after:top-0 after:bg-secondary after:w-full after:h-0 hover:after:h-full after:transition-all after:duration-500 after:z-[-1] hover:after:bg-secondary transition-all duration-500'>
+              <Button
+                variant='boutline'
+                className='flex items-center justify-center gap-3 text-2xl font-bold text-secondary-foreground  border-2 border-secondary  hover:text-primary-foreground px-10 py-[15px] whitespace-nowrap w-full relative after:absolute after:left-0 after:right-0 after:top-0 after:bg-secondary after:w-full after:h-0 hover:after:h-full after:transition-all after:duration-500 after:z-[-1] hover:after:bg-secondary transition-all duration-500'
+              >
                 Contact Now <RightArrow height='25' width='22' />
-              </button>
+              </Button>
             </Link>
           </div>
         </div>

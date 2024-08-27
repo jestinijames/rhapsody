@@ -4,6 +4,8 @@ import React from 'react';
 //import useOverflowHidden from '@/hooks/useOverflowHidden';
 import { cn } from '@/lib/utils';
 
+import { Button } from '@/components/ui/button';
+
 import CloseIcon from '@/assets/icons/close-icon';
 import Search from '@/assets/icons/search';
 
@@ -24,12 +26,12 @@ const Offcanvas: React.FC<OffcanvasProps> = ({
       )}
     >
       <div className='w-full relative'>
-        <button
+        <Button
           onClick={() => setOffcanvaseActive(false)}
           className='absolute right-10 top-10 text-secondary-foreground'
         >
           <CloseIcon />
-        </button>
+        </Button>
       </div>
       <hr />
       <form className='container h-full mx-auto flex justify-center  flex-col'>

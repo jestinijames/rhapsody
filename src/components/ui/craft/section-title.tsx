@@ -53,9 +53,15 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
     };
   }, [scrollHeight]); // Depend on scrollHeight to update as needed
 
+  const nameWithoutSpace = formatString(sectionTitle);
+
   return (
     <>
-      <div ref={containerRef} className='overflow-x-hidden'>
+      <div
+        id={nameWithoutSpace}
+        ref={containerRef}
+        className='overflow-x-hidden'
+      >
         <motion.div
           style={{ translateX: scrollValue, transitionDuration: '1s' }}
         >
@@ -109,3 +115,27 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 };
 
 export default SectionTitle;
+
+const formatString = (sectionName: string) => {
+  // Remove symbols, spaces, and make the first letter lowercase
+  const cleanString = sectionName
+    .replace(/[^\w\s]/g, '') // Remove all symbols except word characters and spaces
+    .replace(/\s+/g, ' ') // Replace multiple spaces with a single space
+    .trim(); // Remove leading and trailing spaces
+
+  // Convert to camelCase
+  const camelCaseString = cleanString
+    .split(' ') // Split by spaces
+    .map(
+      (
+        word,
+        index // Capitalize each word except the first one
+      ) =>
+        index === 0
+          ? word.toLowerCase()
+          : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+    )
+    .join(''); // Join back into a single string without spaces
+
+  return camelCaseString;
+};
