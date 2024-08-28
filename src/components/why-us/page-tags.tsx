@@ -4,28 +4,7 @@ import React from 'react';
 
 import { Button } from '@/components/ui/button';
 
-const tagList = [
-  {
-    id: '1',
-    tag: 'How it Works',
-    link: '#howItWorks',
-  },
-  {
-    id: '2',
-    tag: 'Growth Map',
-    link: '#growthMap',
-  },
-  {
-    id: '3',
-    tag: 'Guided Growth',
-    link: '#guidedMusicalGrowth',
-  },
-  {
-    id: '4',
-    tag: 'Other Curriculums',
-    link: '#otherCurriculums',
-  },
-];
+import { tagList } from '@/constant/config';
 
 const PageTags = () => {
   return (

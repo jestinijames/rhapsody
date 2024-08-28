@@ -3,6 +3,8 @@ import img_1 from '@/assets/images/gallery-1.jpg';
 import img_2 from '@/assets/images/gallery-2.jpg';
 import img_3 from '@/assets/images/gallery-3.jpg';
 import img_4 from '@/assets/images/gallery-4.jpg';
+import hero_2 from '@/assets/images/hero-2.jpg';
+import hero_3 from '@/assets/images/hero-3.jpg';
 import project_img_1 from '@/assets/images/project-overview-img-1.jpg';
 import project_img_2 from '@/assets/images/project-overview-img-2.jpg';
 import project_img_3 from '@/assets/images/project-overview-img-3.jpg';
@@ -411,5 +413,54 @@ export const faqData = [
     ans: `
     Yes, all our instructors are highly qualified professionals with extensive experience in both teaching and performing. They are passionate about helping students achieve their musical potential.
     `,
+  },
+];
+
+export const performanceData = [
+  {
+    id: 1,
+    project_name: 'Reel Talent Collabs',
+    project_img: hero_2,
+    project_desc:
+      'Explore dynamic partnerships and creative synergies where our music academy brings together diverse talents to produce inspiring and innovative musical projects.',
+    project_story:
+      'In today’s social media era, we’re committed to showcasing your talent through performance opportunities, whether solo, duet, or band. We’ll collaborate with students and feature these on our platforms, ensuring your music reaches thousands of enthusiasts, amplifying your presence.',
+  },
+  {
+    id: 2,
+    project_name: 'Annual Musical Recitals',
+    project_img: hero_3,
+    project_desc:
+      'Showcase your progress and talent in, where students take the stage to perform, celebrate achievements, and gain valuable experience in a live setting.',
+    project_story:
+      'Every year, our Annual "Virtual Musical Recital", invites all students to showcase their talent. This event offers a platform for participants to perform, receive support, and connect with an audience that celebrates their musical achievements.',
+  },
+];
+
+export const tagList = [
+  {
+    id: '1',
+    tag: 'How it Works',
+    link: '#howItWorks',
+  },
+  {
+    id: '2',
+    tag: 'Growth Map',
+    link: '#growthMap',
+  },
+  {
+    id: '3',
+    tag: 'Guided Growth',
+    link: '#guidedMusicalGrowth',
+  },
+  {
+    id: '4',
+    tag: 'Other Curriculums',
+    link: '#otherCurriculums',
+  },
+  {
+    id: '5',
+    tag: 'Performance Opportunities',
+    link: '#performanceOpportunities',
   },
 ];
