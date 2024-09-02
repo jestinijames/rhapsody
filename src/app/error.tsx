@@ -1,38 +1,38 @@
-'use client'; // Error components must be Client Components
-
+'use client';
+import { Metadata } from 'next';
+import Image from 'next/image';
 import * as React from 'react';
-import { RiAlarmWarningFill } from 'react-icons/ri';
 
-import { Button } from '@/components/ui/button';
+export const metadata: Metadata = {
+  title: 'Not Found',
+};
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string };
-  reset: () => void;
-}) {
-  React.useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.error(error);
-  }, [error]);
-
+export default function NotFound() {
   return (
-    <main>
-      <section className='bg-white'>
-        <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-black'>
-          <RiAlarmWarningFill
-            size={60}
-            className='drop-shadow-glow animate-flicker text-red-500'
-          />
-          <h1 className='mt-8 text-4xl md:text-6xl'>
-            Oops, something went wrong!
-          </h1>
-          <Button variant='default' onClick={reset} className='mt-4'>
-            Try again
-          </Button>
-        </div>
-      </section>
-    </main>
+    <div className='flex h-screen'>
+      {/* Left Section (Text) */}
+      <div className='w-1/2 flex flex-col justify-center items-start p-12'>
+        <h1 className='text-5xl font-bold mb-4'>404</h1>
+        <p className='text-2xl mb-8'>Page not found</p>
+        <p className='text-lg mb-8'>
+          Sorry, we couldn't find the page you're looking for.
+        </p>
+        <a href='/' className='text-lg text-blue-600 underline'>
+          ← Back to home
+        </a>
+      </div>
+
+      {/* Right Section (Image) */}
+      <div className='w-1/2 relative'>
+        <Image
+          src='/path-to-your-image.jpg' // Update with the correct path to your image
+          alt='404 Background'
+          layout='fill'
+          objectFit='cover'
+          quality={100} // Optional: Adjust image quality (1-100)
+          priority
+        />
+      </div>
+    </div>
   );
 }

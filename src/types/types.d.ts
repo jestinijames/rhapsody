@@ -147,3 +147,22 @@ export interface PricingCardProps {
   minutes: string;
   features: string[];
 }
+
+// Define the types for the social link items
+interface SocialLink {
+  id: number;
+  link: string;
+  media: string;
+}
+
+// Define the props for the TeamCard component
+export interface TeamCardProps {
+  img: string | StaticImageData;
+  social_link: SocialLink[];
+  name: string;
+  position: string;
+  text_muted?: string;
+  cardVariants?: { [key: string]: any }; // Adjust the type based on the actual structure of your variants
+  prantCalss?: string;
+  slug: string;
+}

@@ -8,6 +8,8 @@ import hero_3 from '@/assets/images/hero-3.jpg';
 import project_img_1 from '@/assets/images/project-overview-img-1.jpg';
 import project_img_2 from '@/assets/images/project-overview-img-2.jpg';
 import project_img_3 from '@/assets/images/project-overview-img-3.jpg';
+import team_1 from '@/assets/images/team-1.jpg';
+import team_2 from '@/assets/images/team-2.jpg';
 
 import { MenuListItem } from '@/types/types';
 
@@ -22,25 +24,25 @@ export const siteConfig = {
 export const servicesData = [
   {
     id: '01',
-    service_name: 'About Us',
+    service_name: 'Why us',
     service_desc:
       'Our residential design services cover everything from concept to completion',
-    link: '/service-single',
+    link: '/about/why-us',
   },
   {
     id: '02',
-    service_name: 'Why Us',
+    service_name: 'Faculty',
     service_desc:
       'Our expertise in commercial design focuses on optimizing functionality and aesthetics',
-    link: '/service-single',
+    link: '/about/faculty',
   },
   {
     id: '03',
-    service_name: 'Growth Map',
+    service_name: 'Frequently Asked Questions',
     service_desc:
       "We maximize the potential of your space, ensuring it's organized, and aesthetically pleasing.",
 
-    link: '/service-single',
+    link: '/about/frequently-asked-questions',
   },
 ];
 
@@ -462,5 +464,102 @@ export const tagList = [
     id: '5',
     tag: 'Performance Opportunities',
     link: '#performanceOpportunities',
+  },
+];
+
+export const teamData = [
+  {
+    id: 1,
+    img: team_1,
+    name: 'Thomas EV',
+    position: 'Violinist',
+    slug: 'thomas-ev',
+    email: 'thomasev@gmail.com',
+    bio: 'Thomas EV, the Violin Virtuoso at Rhapsody Academy of Music, has over four decades of experience, blending performance excellence with a passion for teaching. His musical journey is deeply rooted in both the classical and contemporary worlds.',
+    focus:
+      'Thomas EV specializes in violin, with additional expertise in piano and guitar instruction.',
+    specializations:
+      'His mastery lies in cultivating a deep understanding of advanced violin techniques, guiding students to blend technical precision with emotional expression.',
+    philosophy:
+      'Thomas EV`s teaching philosophy at Rhapsody revolves around nurturing the unique musical identity of each student, helping them discover and express their artistic voice.',
+    approach:
+      'Through personalized guidance, Thomas ensures that every lesson resonates with the student`s aspirations, empowering them to excel in their musical journey.',
+    background:
+      'Thomas EV began his career as a session violinist at Tharangani Studio, founded by the legendary K.J. Yesudas, and later became the orchestral director for Angel Voice, a renowned ensemble in Muvattupuzha.',
+    credentials:
+      'Recognized as a mentor and performer, Thomas has been instrumental in shaping the careers of many musicians who have performed in prominent reality shows and collaborated with luminaries like A.R. Rahman.',
+    achievements:
+      'Thomas EV`s contributions to music have been celebrated across the industry, with his students achieving accolades and his work being synonymous with excellence at Rhapsody Academy of Music.',
+
+    social_link: [
+      {
+        id: 1,
+        link: '',
+        media: 'FB',
+      },
+      {
+        id: 2,
+        link: '',
+        media: 'IN',
+      },
+      {
+        id: 3,
+        link: '',
+        media: 'TW',
+      },
+      {
+        id: 4,
+        link: 'TW',
+        media: 'LI',
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    img: team_2,
+    name: 'Abel Thomas',
+    position: 'Drummist',
+    slug: 'abel-thomas',
+    email: 'abelThomas@gmail.com',
+    bio: 'Abel Thomas, the Rhythm Maestro at Rhapsody Academy of Music, brings over eight years of international experience, infusing his lessons with a blend of diverse drumming styles and a passion for teaching.',
+    focus:
+      'Abel specializes in drumming across various genres, with additional expertise in piano instruction for beginners to intermediate students.',
+    specializations:
+      'His expertise lies in crafting personalized lessons that focus on fundamental techniques, rhythmic mastery, and musical expression, ensuring each student builds a solid foundation for future growth.',
+
+    philosophy:
+      'Abel’s teaching philosophy at Rhapsody Academy is rooted in fostering a supportive and inspiring environment where students of all ages can explore and develop their musical talents.',
+    approach:
+      'With a commitment to customizing lessons to align with each student’s unique goals, Abel ensures that every lesson resonates with the learner’s aspirations and enhances their musical journey.',
+    background:
+      'Abel has taught at esteemed institutions such as the Oakville Academy of Music in Ontario, Canada Music Lessons, and the Dark Mountain School of Music in Alberta, tailoring his approach to students ranging from young children to adults.',
+    credentials:
+      'Recognized for his dedication and skill, Abel has earned a reputation as a patient and enthusiastic instructor, devoted to guiding students with a passion for the art of music.',
+    achievements:
+      'Abel Thomas’s contributions to music education have been celebrated across institutions, where his tailored teaching approach continues to inspire and shape aspiring musicians at Rhapsody Academy of Music.',
+
+    social_link: [
+      {
+        id: 1,
+        link: '',
+        media: 'FB',
+      },
+      {
+        id: 2,
+        link: '',
+        media: 'IN',
+      },
+      {
+        id: 3,
+        link: '',
+        media: 'TW',
+      },
+      {
+        id: 4,
+        link: 'TW',
+        media: 'LI',
+      },
+    ],
   },
 ];
