@@ -5,28 +5,9 @@ import { cn } from '@/lib/utils';
 import SectionSidebarImg from '@/components/ui/craft/section-sidebar-img';
 import SectionTitle from '@/components/ui/craft/section-title';
 
+import DrumIcon from '@/assets/icons/drum-icon';
 import about_img from '@/assets/images/about-image.jpg';
-
-const visionList = [
-  {
-    id: '01',
-    item: 'Tailored Musical Training',
-    item_desc:
-      'We provide personalized music education designed to meet your unique needs and elevate your skills to new heights.',
-  },
-  {
-    id: '02',
-    item: 'Dedicated to Your Musical Growth',
-    item_desc:
-      'We are committed to nurturing and developing your musical talents with steadfast dedication and support.',
-  },
-  {
-    id: '03',
-    item: 'Harmonizing Passion and Skill',
-    item_desc:
-      'Our mission is to blend passion with expertise, fostering a deeper connection to music and helping you achieve your fullest potential.',
-  },
-];
+import { visionList } from '@/constant/config';
 
 const Vision = ({
   text_muted,
@@ -68,19 +49,15 @@ const Vision = ({
                       key={id}
                       className='lg:flex gap-10 pb-10 last:pb-0 justify-between'
                     >
-                      <svg
+                      <DrumIcon
                         ref={ref}
-                        strokeWidth='1'
                         className={`h-[65px] w-20 relative -top-2 left-3 xl:text-6xl text-5xl mb-3 lg:mb-0 inline-block font-extrabold leading-120  ${
                           inView
-                            ? 'animate-text-line-animation stroke-secondary stroke-dasharray-1000 stroke-dashoffset-1000'
-                            : ' fill-transparent stroke-secondary '
+                            ? 'animate-text-line-animation stroke-primary-rhapsody stroke-dasharray-1000 stroke-dashoffset-1000'
+                            : ' fill-transparent stroke-primary-rhapsody '
                         }`}
-                      >
-                        <text x='0%' dominantBaseline='middle' y='70%'>
-                          {id}
-                        </text>
-                      </svg>
+                      />
+
                       <div className='max-w-[534px]'>
                         <h4 className='text-3xl 2sm:text-4xl font-bold leading-135 text-primary-rhapsody font-farro'>
                           {item}

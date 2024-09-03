@@ -7,7 +7,7 @@ const PageLoader = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       {children}
-      <NextTopLoader />
+      <NextTopLoader color='#d67d29' />
     </>
   );
 };

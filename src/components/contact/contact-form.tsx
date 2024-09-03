@@ -1,6 +1,5 @@
 'use client';
 import { zodResolver } from '@hookform/resolvers/zod';
-import React from 'react';
 import { SubmitHandler, useForm, useFormContext } from 'react-hook-form';
 import { z } from 'zod';
 
@@ -12,7 +11,6 @@ import {
   FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
@@ -202,14 +200,14 @@ function InquiryTypeField({ isSubmitting }: { isSubmitting: boolean }) {
 
   const inquiryType = watch('inquiry') as boolean;
 
-  const inquiryHeader = inquiryType ? 'Specific Instrument' : 'General Inquiry';
+  //const inquiryHeader = inquiryType ? 'Specific Instrument' : 'General Inquiry';
   const inquiryDescription = inquiryType
     ? 'Ask about a specific instrument and lesson duration.'
     : 'General questions or concerns.';
 
   return (
-    <div className='mb-2'>
-      <h3 className='mb-4 text-lg font-medium'>
+    <div className='mb-2 text-secondary-rhapsody'>
+      <h3 className='mb-4 text-lg  font-medium'>
         What is the nature of your inquiry?
       </h3>
       <div className='space-y-4'>
@@ -218,17 +216,19 @@ function InquiryTypeField({ isSubmitting }: { isSubmitting: boolean }) {
           name='inquiry'
           render={({ field }) => (
             <FormItem className='flex flex-row items-center justify-between rounded-lg border p-4'>
-              <div className='space-y-0.5'>
+              {/* <div className='space-y-0.5'>
                 <FormLabel className='text-base'>{inquiryHeader}</FormLabel>
-                <FormDescription>{inquiryDescription}</FormDescription>
-              </div>
+              </div> */}
               <FormControl>
-                <Switch
-                  disabled={isSubmitting}
-                  aria-disabled={isSubmitting}
-                  checked={field.value}
-                  onCheckedChange={field.onChange}
-                />
+                <div className='flex items-center space-x-2'>
+                  <Switch
+                    disabled={isSubmitting}
+                    aria-disabled={isSubmitting}
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                  <FormDescription>{inquiryDescription}</FormDescription>
+                </div>
               </FormControl>
             </FormItem>
           )}

@@ -563,3 +563,24 @@ export const teamData = [
     ],
   },
 ];
+
+export const visionList = [
+  {
+    id: '01',
+    item: 'Tailored Musical Training',
+    item_desc:
+      'We provide personalized music education designed to meet your unique needs and elevate your skills to new heights.',
+  },
+  {
+    id: '02',
+    item: 'Dedicated to Your Musical Growth',
+    item_desc:
+      'We are committed to nurturing and developing your musical talents with steadfast dedication and support.',
+  },
+  {
+    id: '03',
+    item: 'Harmonizing Passion and Skill',
+    item_desc:
+      'Our mission is to blend passion with expertise, fostering a deeper connection to music and helping you achieve your fullest potential.',
+  },
+];
