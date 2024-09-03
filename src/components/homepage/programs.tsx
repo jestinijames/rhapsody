@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 import SectionTitle from '@/components/ui/craft/section-title';
@@ -15,6 +16,9 @@ const Programs = ({
   bg_muted?: string;
 }) => {
   const [expendItem, setExpendItem] = useState('01');
+
+  const router = useRouter();
+
   return (
     <section className='pt-20'>
       <div className='container-fluid '>
@@ -32,6 +36,7 @@ const Programs = ({
         {galleryData.map(({ id, img, img_desc, img_title, link }) => {
           return (
             <div
+              onClick={() => router.push(link)}
               key={id}
               onMouseEnter={() => setExpendItem(id)}
               onMouseLeave={() => setExpendItem('02')}
@@ -39,7 +44,7 @@ const Programs = ({
                 expendItem === id
                   ? 'lg:basis-[47%] basis-[50%]'
                   : 'lg:basis-[20%] basis-[30%]'
-              } flex-grow sm:min-h-[750px] min-h-[420px] overflow-hidden group transition-all duration-700 relative`}
+              } flex-grow sm:min-h-[750px] min-h-[420px] overflow-hidden group transition-all duration-700 cursor-pointer relative`}
             >
               <div className='absolute w-full h-full top-0 left-0 flex flex-col justify-between 2xl:pl-[30px] pl-5 pr-5 2xl:pr-0 py-[30px] after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-full after:h-1/2 after:bg-bottom-liner after:z-[-1] z-10'>
                 <h3

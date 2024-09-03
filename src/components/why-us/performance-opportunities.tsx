@@ -26,7 +26,7 @@ const PerformanceOpportunities = ({
     clickable: true,
     el: '.hero-pagination',
     renderBullet: function (index: any, className: string) {
-      return `<span class='${className} text-white translate-y-16 opacity-0 absolute h-0 leading-[90%] [font-size:_clamp(60px,10vw,150px)] font-extrabold lg:text-right'>${performanceData[index].project_name}</span>`;
+      return `<span class='${className} text-primary-rhapsody translate-y-16 opacity-0 absolute h-0 leading-[90%] [font-size:_clamp(60px,10vw,150px)] font-extrabold lg:text-right'>${performanceData[index].project_name}</span>`;
     },
   };
   return (
@@ -43,7 +43,7 @@ const PerformanceOpportunities = ({
       <div className='grid grid-cols-2'>
         {/* --------- Banner left side */}
         <div
-          className='bg-primary pt-[136px] pb-[148px] bg-cover bg-no-repeat bg-right'
+          className='bg-secondary-rhapsody pt-[136px] pb-[148px] bg-cover bg-no-repeat bg-right'
           style={{ backgroundImage: `url(${hero_vector.src})` }}
         >
           <div className='z-10 relative px-3 md:px-0 '>
@@ -72,6 +72,7 @@ const PerformanceOpportunities = ({
                 return (
                   <SwiperSlide key={id} className='relative'>
                     <div className='h-full flex items-center justify-center text-center relative'>
+                      {/* Image with cover */}
                       <OptimizedImage
                         useSkeleton
                         src={project_img}
@@ -81,7 +82,10 @@ const PerformanceOpportunities = ({
                         height={999}
                         className='h-full object-cover absolute inset-0 z-0'
                       />
-                      <p className='relative z-10 text-primary px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl font-bold leading-none sm:leading-snug md:leading-normal lg:leading-relaxed xl:leading-loose'>
+                      {/* Overlay */}
+                      <div className='absolute inset-0 bg-black opacity-50 z-5'></div>
+                      {/* Text */}
+                      <p className='relative z-10 text-primary-foreground-rhapsody px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl font-bold leading-none sm:leading-snug md:leading-normal lg:leading-relaxed xl:leading-loose'>
                         {project_story}
                       </p>
                     </div>
@@ -94,14 +98,14 @@ const PerformanceOpportunities = ({
               <div className='flex flex-col sm:w-[90px] w-[70px] xl:h-[181px] h-[136px] '>
                 <button
                   onClick={() => swiperRef.current?.slideNext()}
-                  className={`bg-primary text-secondary-foreground flex justify-center items-center h-1/2 `}
+                  className={`bg-secondary-rhapsody text-primary-foreground-rhapsody flex justify-center items-center h-1/2 `}
                 >
                   {' '}
                   <RightArrow width='35' height='22' />{' '}
                 </button>
                 <button
                   onClick={() => swiperRef.current?.slidePrev()}
-                  className='bg-secondary text-primary-foreground flex justify-center items-center h-1/2 rotate-180'
+                  className='bg-primary-foreground-rhapsody text-primary-rhapsody flex justify-center items-center h-1/2 rotate-180'
                 >
                   {' '}
                   <RightArrow width='35' height='22' />{' '}

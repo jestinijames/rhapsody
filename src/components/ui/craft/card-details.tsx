@@ -53,7 +53,7 @@ const CardDetails: FC<CardDetailsProps> = ({
             className='lg:w-1/2 lg:mt-[187px] relative z-[1]'
           >
             <div
-              className={`bg-primary xl:px-16 px-8 xl:pt-[78px] pt-10 xl:pb-[58px] pb-7  `}
+              className={`bg-secondary-rhapsody xl:px-16 px-8 xl:pt-[78px] pt-10 xl:pb-[58px] pb-7  `}
             >
               {/* <p className='text-secondary-foreground mb-7'>{card_desc}</p> */}
               {card_desc}

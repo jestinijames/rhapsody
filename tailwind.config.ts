@@ -61,6 +61,10 @@ const config = {
           'background-image: linear-gradient(180deg, transparent 65%, #fcf113 0)',
       },
       colors: {
+        'primary-rhapsody': 'var(--primary-rhapsody)',
+        'primary-foreground-rhapsody': 'var(--primary-foreground-rhapsody)',
+        'secondary-rhapsody': 'var(--secondary-rhapsody)',
+        'secondary-foreground-rhapsody': 'var(--secondary-foreground-rhapsody)',
         border: 'var(--border)',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

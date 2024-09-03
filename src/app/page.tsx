@@ -20,7 +20,6 @@ export default function HomePage() {
         <Counter />
         <WhyUs />
         <Programs />
-        {/* <ServicesSlider /> */}
         <Feedback />
       </main>
     </PageLayout>

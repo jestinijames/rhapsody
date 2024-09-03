@@ -471,25 +471,25 @@ export const teamData = [
   {
     id: 1,
     img: team_1,
-    name: 'Thomas EV',
-    position: 'Violinist',
+    name: 'Kuttiyachan',
+    position: 'Violin, Piano, Guitar',
     slug: 'thomas-ev',
     email: 'thomasev@gmail.com',
-    bio: 'Thomas EV, the Violin Virtuoso at Rhapsody Academy of Music, has over four decades of experience, blending performance excellence with a passion for teaching. His musical journey is deeply rooted in both the classical and contemporary worlds.',
+    bio: 'Kuttiyachan (Thomas EV), the Violin Virtuoso at Rhapsody Academy of Music, has over four decades of experience, blending performance excellence with a passion for teaching. His musical journey is deeply rooted in both the classical and contemporary worlds.',
     focus:
-      'Thomas EV specializes in violin, with additional expertise in piano and guitar instruction.',
+      'Kuttiyachan (Thomas EV) specializes in violin, with additional expertise in piano and guitar instruction.',
     specializations:
       'His mastery lies in cultivating a deep understanding of advanced violin techniques, guiding students to blend technical precision with emotional expression.',
     philosophy:
-      'Thomas EV`s teaching philosophy at Rhapsody revolves around nurturing the unique musical identity of each student, helping them discover and express their artistic voice.',
+      'Kuttiyachan (Thomas EV)`s teaching philosophy at Rhapsody revolves around nurturing the unique musical identity of each student, helping them discover and express their artistic voice.',
     approach:
       'Through personalized guidance, Thomas ensures that every lesson resonates with the student`s aspirations, empowering them to excel in their musical journey.',
     background:
-      'Thomas EV began his career as a session violinist at Tharangani Studio, founded by the legendary K.J. Yesudas, and later became the orchestral director for Angel Voice, a renowned ensemble in Muvattupuzha.',
+      'Kuttiyachan (Thomas EV) began his career as a session violinist at Tharangani Studio, founded by the legendary K.J. Yesudas, and later became the orchestral director for Angel Voice, a renowned ensemble in Muvattupuzha.',
     credentials:
       'Recognized as a mentor and performer, Thomas has been instrumental in shaping the careers of many musicians who have performed in prominent reality shows and collaborated with luminaries like A.R. Rahman.',
     achievements:
-      'Thomas EV`s contributions to music have been celebrated across the industry, with his students achieving accolades and his work being synonymous with excellence at Rhapsody Academy of Music.',
+      'Kuttiyachan (Thomas EV)`s contributions to music have been celebrated across the industry, with his students achieving accolades and his work being synonymous with excellence at Rhapsody Academy of Music.',
 
     social_link: [
       {
@@ -519,7 +519,7 @@ export const teamData = [
     id: 2,
     img: team_2,
     name: 'Abel Thomas',
-    position: 'Drummist',
+    position: 'Drums, Piano',
     slug: 'abel-thomas',
     email: 'abelThomas@gmail.com',
     bio: 'Abel Thomas, the Rhythm Maestro at Rhapsody Academy of Music, brings over eight years of international experience, infusing his lessons with a blend of diverse drumming styles and a passion for teaching.',

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useEffect } from 'react';
 
-import SocialMediaList from '@/components/layout/socials';
 import { Button } from '@/components/ui/button';
 import SectionTitle from '@/components/ui/craft/section-title';
 import Title from '@/components/ui/craft/title';
@@ -103,34 +102,6 @@ const TeamSingle = ({ slug }: { slug: string }) => {
                   <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>
                     {member.achievements}
                   </p>
-                </li>
-              </ul>
-            </div>
-            <div className='pt-20'>
-              <Title title_text='Contact information:' />
-              <ul>
-                <li className='flex items-center mb-3'>
-                  <h5 className='font-bold min-w-28'>Email: </h5>
-                  <Link
-                    href={`mailto:${'mailto:russell@architronix.com'}`}
-                    className='hover-underline'
-                  >
-                    <span>{member.email}</span>
-                  </Link>
-                </li>
-                {/* <li className='flex items-center mb-3'>
-                  <h5 className='font-bold min-w-28'>Phone: </h5>
-                  <Link href='tel:555123-4567' className='hover-underline'>
-                    {' '}
-                    <span>(555) 123-4567</span>{' '}
-                  </Link>
-                </li> */}
-                <li className='flex items-center'>
-                  <h5 className='font-bold min-w-28'>Social: </h5>
-                  <div className=''>
-                    {' '}
-                    <SocialMediaList />{' '}
-                  </div>
                 </li>
               </ul>
             </div>

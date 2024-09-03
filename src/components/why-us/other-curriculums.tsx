@@ -115,30 +115,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className='lg:w-1/2 lg:mt-[187px] relative z-[1]'
           >
             <div
-              className={`bg-primary xl:px-16 px-8 xl:pt-[78px] pt-10 xl:pb-[58px] pb-7  `}
+              className={`bg-secondary-rhapsody xl:px-16 px-8 xl:pt-[78px] pt-10 xl:pb-[58px] pb-7  `}
             >
-              <h3 className='xl:text-5xl md:text-[40px] text-4xl font-extrabold leading-120 text-secondary-foreground pb-10'>
+              <h3 className='xl:text-5xl md:text-[40px] text-4xl font-extrabold leading-120 text-primary-rhapsody pb-10 font-farro'>
                 {college_name}
               </h3>
-              <p className='text-secondary-foreground mb-7'>{college_desc}</p>
-              {/* <ul className='mb-9'>
-                <li className='flex  items-center mb-[6px]'>
-                  <span className='inline-block font-extrabold min-w-32 text-secondary-foreground'>
-                    Focus Areas:
-                  </span>
-                  <span className='font-medium text-secondary-foreground'>
-                    {focus_areas}
-                  </span>
-                </li>
-                <li className='flex  items-center mb-[6px]'>
-                  <span className='inline-block font-extrabold min-w-32 text-secondary-foreground'>
-                    Global Reach:
-                  </span>
-                  <span className='font-medium text-secondary-foreground'>
-                    {global_reach}
-                  </span>
-                </li>
-              </ul> */}
+              <p className='text-primary-foreground-rhapsody mb-7 font-poppins'>
+                {college_desc}
+              </p>
+
               <Link target='_blank' href={link}>
                 <Button className='border-secondary text-primary-foreground hover:text-secondary-foreground after:left-0 after:bg-secondary'>
                   Visit <RightArrow width='35' height='22' />

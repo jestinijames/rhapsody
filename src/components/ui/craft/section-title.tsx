@@ -65,7 +65,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
         <motion.div
           style={{ translateX: scrollValue, transitionDuration: '1s' }}
         >
-          <h1 className='mt-16 text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-20 xl:text-[324px] lg:text-[200px] md:text-[170px] sm:text-[140px] text-[100px] whitespace-nowrap font-extrabold leading-135 '>
+          <h1 className='font-farro mt-16 text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-20 xl:text-[324px] lg:text-[200px] md:text-[170px] sm:text-[140px] text-[100px] whitespace-nowrap font-extrabold leading-135 '>
             {sectionName}
           </h1>
         </motion.div>
@@ -78,7 +78,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
         >
           <h2
             className={cn(
-              `[font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110 text-primary-foreground mb-5 ${text_muted}`
+              `[font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110 text-primary-rhapsody mb-5 font-farro ${text_muted}`
             )}
             dangerouslySetInnerHTML={{ __html: sectionTitle }}
           />
@@ -88,7 +88,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
           <div className='flex md:flex-row flex-col justify-between md:items-center'>
             <h5
               className={cn(
-                `text-primary-foreground lg:text-[35px] sm:text-3xl text-2xl font-semibold mt-4 max-w-[690px] md:mb-0 mb-7 !leading-160 ${text_muted}`
+                ` lg:text-[35px] sm:text-3xl text-2xl font-semibold mt-4 max-w-[690px] md:mb-0 mb-7 !leading-160 font-poppins text-secondary-rhapsody ${text_muted}`
               )}
             >
               {sectionDesc}

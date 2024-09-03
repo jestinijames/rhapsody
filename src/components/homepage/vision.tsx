@@ -51,7 +51,7 @@ const Vision = ({
         />
         <div
           className={cn(
-            `bg-primary xl:mt-[220px] lg:mt-25 md:mt-44 mt-[540px] xl:mb-20 mb-0 ${bg_muted}`
+            `bg-secondary-rhapsody xl:mt-[220px] lg:mt-25 md:mt-44 mt-[540px] xl:mb-20 mb-0 ${bg_muted}`
           )}
         >
           <div className='container'>
@@ -82,10 +82,10 @@ const Vision = ({
                         </text>
                       </svg>
                       <div className='max-w-[534px]'>
-                        <h4 className='text-3xl 2sm:text-4xl font-bold leading-135 text-secondary-foreground'>
+                        <h4 className='text-3xl 2sm:text-4xl font-bold leading-135 text-primary-rhapsody font-farro'>
                           {item}
                         </h4>
-                        <p className='text-lg text-secondary-foreground font-normal'>
+                        <p className='text-lg  font-normal text-primary-foreground-rhapsody font-poppins'>
                           {item_desc}
                         </p>
                       </div>

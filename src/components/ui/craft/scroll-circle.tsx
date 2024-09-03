@@ -38,10 +38,10 @@ const ScrollCircle = () => {
       onClick={scrollToTop}
       className={`${
         showBackToTop ? 'block' : 'hidden'
-      } fixed bottom-5 right-5 z-20 bg-primary rounded-full cursor-pointer shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]`}
+      } fixed bottom-5 right-5 z-20 bg-secondary-rhapsody rounded-full cursor-pointer shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]`}
     >
       <svg
-        className=' sm:w-16 sm:h-16 w-14 h-14'
+        className=' sm:w-16 sm:h-16 w-14 h-14 stroke-primary-foreground-rhapsody'
         width='100%'
         height='100%'
         viewBox='-1 -1 102 102'
@@ -59,7 +59,7 @@ const ScrollCircle = () => {
           }}
         ></path>
       </svg>
-      <span className='text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+      <span className='text-primary-foreground-rhapsody absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
         <GoArrowUp className='text-4xl' />
       </span>
     </div>
