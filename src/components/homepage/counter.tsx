@@ -40,7 +40,7 @@ const Counter = ({
               <li key={id} className='flex flex-col'>
                 <span
                   className={cn(
-                    `[font-size:_clamp(48px,9vw,90px)] font-extrabold text-primary-foreground leading-120 overflow-y-hidden overflow-x-auto ${text_muted}`
+                    `[font-size:_clamp(48px,9vw,90px)] font-extrabold text-primary-rhapsody font-farro leading-120  ${text_muted}`
                   )}
                 >
                   <SlotCounter
@@ -61,7 +61,7 @@ const Counter = ({
                 ></span>
                 <span
                   className={cn(
-                    `2sm:text-2xl text-xl font-bold text-primary-foreground ${text_muted}`
+                    `2sm:text-2xl text-xl font-bold text-secondary-rhapsody ${text_muted}`
                   )}
                 >
                   {title}

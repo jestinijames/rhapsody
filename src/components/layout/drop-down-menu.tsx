@@ -7,13 +7,12 @@ import { DropDownMenuProps } from '@/types/types';
 
 const DropDownMenu: React.FC<DropDownMenuProps> = ({
   dropDownList,
-  bgColor,
   parentId,
 }) => {
   return (
     <div
       className={cn(
-        `absolute z-50 bg-primary flex max-h-0 py-0 overflow-hidden transition-all duration-500 group-hover:max-h-[300px] group-hover:py-5 ${bgColor}`
+        `absolute z-50 bg-secondary-rhapsody flex max-h-0 py-0 overflow-hidden transition-all duration-500 group-hover:max-h-[300px] group-hover:py-5 `
       )}
     >
       <ul className='min-w-60 px-6'>
@@ -23,7 +22,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({
               <Link
                 href={path}
                 data-id={parentId}
-                className='dropdown-item text-secondary-foreground text-xl font-medium inline-block relative after:transition-all after:duration-700 after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-0 after:h-[2px] after:bg-secondary after:hover:w-full'
+                className='dropdown-item text-primary-foreground-rhapsody text-xl font-medium inline-block relative after:transition-all after:duration-700 after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-0 after:h-[2px] after:bg-secondary after:hover:w-full'
               >
                 {name}
               </Link>

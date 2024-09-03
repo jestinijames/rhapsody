@@ -17,9 +17,10 @@ const Banner = () => {
         >
           <source src='../video.mp4' type='video/mp4' />
         </video>
+        <div className='absolute inset-0 bg-black bg-opacity-50' />
         <div className='container'>
           <div className='absolute top-1/2 -translate-y-1/2'>
-            <h1 className='text-white [font-size:_clamp(60px,10vw,150px)] font-extrabold leading-[90%]'>
+            <h1 className='text-primary-foreground-rhapsody [font-size:_clamp(60px,10vw,150px)] font-extrabold leading-[90%] font-farro'>
               Fostering Musical <br />
               <TextTyped
                 text={[
@@ -37,7 +38,7 @@ const Banner = () => {
               />
             </h1>
             <Link href='/contact' className='mt-16 inline-block'>
-              <Button className='sm:px-10 px-4 after:left-0 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground'>
+              <Button className='sm:px-10 px-4 after:left-0 after:bg-primary-rhapsody text-primary-foreground-rhapsody border-secondary hover:text-primary-foreground-rhapsody'>
                 {' '}
                 Book a free consultation <RightArrow
                   width='35'

@@ -26,8 +26,6 @@ const Programs = ({
           sectionName='Programs'
           sectionTitle='Exploring Our Courses'
           sectionDesc='Customized music training for several instruments'
-          link='/programs'
-          button_text='View All Programs'
           bg_muted={bg_muted}
           text_muted={text_muted}
         />
@@ -48,8 +46,10 @@ const Programs = ({
             >
               <div className='absolute w-full h-full top-0 left-0 flex flex-col justify-between 2xl:pl-[30px] pl-5 pr-5 2xl:pr-0 py-[30px] after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-full after:h-1/2 after:bg-bottom-liner after:z-[-1] z-10'>
                 <h3
-                  className={`text-6xl font-extrabold leading-120 transition-all duration-700 text-transparent webkit-text-stroke-width-1 webkit-text-stroke-white ${
-                    expendItem === id ? 'webkit-text-stroke-primary' : ''
+                  className={`text-6xl font-extrabold leading-120 transition-all duration-700 text-primary-foreground-rhapsody webkit-text-stroke-width-1  ${
+                    expendItem === id
+                      ? 'webkit-text-stroke-primary-rhapsody'
+                      : 'webkit-text-stroke-secondary-rhapsody'
                   }`}
                 >
                   {id}
@@ -61,12 +61,12 @@ const Programs = ({
                 >
                   <Link
                     href={link}
-                    className='text-3xl 2sm:text-4xl font-bold leading-135 text-white max-w-60 2xl:min-w-56 min-w-48 relative'
+                    className='text-3xl 2sm:text-4xl font-bold leading-135 text-primary-foreground-rhapsody max-w-60 2xl:min-w-56 min-w-48 relative'
                   >
                     {img_title}
                   </Link>
                   <p
-                    className={`text-secondary-foreground font-semibold 3xl:max-w-[421px] 2xl:max-w-80 transition-all duration-700 3xl:min-w-[420px] xl:min-w-80 min-w-72 overflow-hidden  ${
+                    className={`text-primary-foreground-rhapsody font-semibold 3xl:max-w-[421px] 2xl:max-w-80 transition-all duration-700 3xl:min-w-[420px] xl:min-w-80 min-w-72 overflow-hidden  ${
                       expendItem === id
                         ? 'opacity-100'
                         : 'sm:opacity-0 opacity-100'

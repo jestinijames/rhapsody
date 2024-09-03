@@ -1,10 +1,9 @@
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+//import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 import { cn } from '@/lib/utils';
-import useActiveNavLink from '@/hooks/use-active-navlink';
 import useStickyHeader from '@/hooks/use-sticky-header';
 
 import DropDownMenu from '@/components/layout/drop-down-menu';
@@ -19,8 +18,8 @@ const BottomNavbar = ({ linkColor }: { linkColor?: string }) => {
   const [offcanvaseActive, setOffcanvaseActive] = useState(false);
 
   useStickyHeader(linkColor);
-  const pathName = usePathname();
-  useActiveNavLink(pathName);
+  //const pathName = usePathname();
+  //useActiveNavLink(pathName);
 
   return (
     <>
@@ -28,7 +27,7 @@ const BottomNavbar = ({ linkColor }: { linkColor?: string }) => {
         <div>
           <Link
             href='/'
-            className={cn(`logo text-primary-foreground ${linkColor}`)}
+            className={cn(`logo text-secondary-rhapsody ${linkColor}`)}
           >
             <OptimizedImage
               useSkeleton
@@ -57,13 +56,13 @@ const BottomNavbar = ({ linkColor }: { linkColor?: string }) => {
                       href={path}
                       data-id={id}
                       className={cn(
-                        `nav-link text-xl font-medium px-7 py-[34px] flex items-center gap-2  group-hover:bg-primary group-hover:text-secondary-foreground ${linkColor}`
+                        `nav-link text-xl font-medium px-7 py-[34px] flex items-center gap-2 text-secondary-rhapsody  group-hover:bg-secondary-rhapsody group-hover:text-primary-foreground-rhapsody ${linkColor}`
                       )}
                     >
                       {name}
                       {(isDropdown || isMegaMenu) && (
                         <span
-                          className={` transition-all duration-500 rotate-180 group-hover:rotate-0 group-hover:text-secondary-foreground`}
+                          className={` transition-all duration-500 rotate-180 group-hover:rotate-0 group-hover:text-primary-foreground-rhapsody`}
                         >
                           <svg
                             width='12'

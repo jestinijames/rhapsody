@@ -1,13 +1,10 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useEffect } from 'react';
 
-import { Button } from '@/components/ui/button';
 import SectionTitle from '@/components/ui/craft/section-title';
 import Title from '@/components/ui/craft/title';
 
-import RightArrow from '@/assets/icons/right-arrow';
 import { teamData } from '@/constant/config';
 
 const TeamSingle = ({ slug }: { slug: string }) => {
@@ -45,7 +42,7 @@ const TeamSingle = ({ slug }: { slug: string }) => {
             </div>
             <div className='pt-12.5'>
               <Title title_text='Expertise and Specializations:' />
-              <ul>
+              <ul className='text-secondary-rhapsody'>
                 <li>
                   <h5 className='font-bold'>Musical Focus: </h5>
                   <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>
@@ -62,7 +59,7 @@ const TeamSingle = ({ slug }: { slug: string }) => {
             </div>
             <div className='pt-20'>
               <Title title_text='Teaching  Philosophy:' />
-              <ul>
+              <ul className='text-secondary-rhapsody'>
                 <li>
                   <h5 className='font-bold'>Philosophy Overview: </h5>
                   <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>
@@ -79,7 +76,7 @@ const TeamSingle = ({ slug }: { slug: string }) => {
             </div>
             <div className='pt-20'>
               <Title title_text='Education and Credentials:' />
-              <ul>
+              <ul className='text-secondary-rhapsody'>
                 <li>
                   <h5 className='font-bold'>Professional Background: </h5>
                   <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>
@@ -96,7 +93,7 @@ const TeamSingle = ({ slug }: { slug: string }) => {
             </div>
             <div className='pt-20'>
               <Title title_text='Awards and Recognition:' />
-              <ul>
+              <ul className='text-secondary-rhapsody'>
                 <li>
                   <h5 className='font-bold'>Achievements: </h5>
                   <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>
@@ -114,11 +111,11 @@ const TeamSingle = ({ slug }: { slug: string }) => {
               alt='Russell Otten'
               className='w-full'
             />
-            <Link href='' className='mt-11 inline-block'>
+            {/* <Link href='' className='mt-11 inline-block'>
               <Button variant='boutline' className='after:left-0'>
                 Connect to Linkedin <RightArrow width='53' height='22' />
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

@@ -157,6 +157,14 @@ body {
     -webkit-text-stroke-color: var(--primary);
   }
 
+  .webkit-text-stroke-primary-rhapsody {
+    -webkit-text-stroke-color: var(--primary-rhapsody);
+  }
+
+  .webkit-text-stroke-secondary-rhapsody {
+    -webkit-text-stroke-color: var(--secondary-rhapsody);
+  }
+
   .webkit-text-stroke-secondary {
     -webkit-text-stroke-color: var(--secondary);
   }

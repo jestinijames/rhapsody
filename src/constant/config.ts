@@ -481,7 +481,7 @@ export const teamData = [
     specializations:
       'His mastery lies in cultivating a deep understanding of advanced violin techniques, guiding students to blend technical precision with emotional expression.',
     philosophy:
-      'Kuttiyachan (Thomas EV)`s teaching philosophy at Rhapsody revolves around nurturing the unique musical identity of each student, helping them discover and express their artistic voice.',
+      'Kuttiyachan`s teaching philosophy at Rhapsody revolves around nurturing the unique musical identity of each student, helping them discover and express their artistic voice.',
     approach:
       'Through personalized guidance, Thomas ensures that every lesson resonates with the student`s aspirations, empowering them to excel in their musical journey.',
     background:
@@ -489,7 +489,7 @@ export const teamData = [
     credentials:
       'Recognized as a mentor and performer, Thomas has been instrumental in shaping the careers of many musicians who have performed in prominent reality shows and collaborated with luminaries like A.R. Rahman.',
     achievements:
-      'Kuttiyachan (Thomas EV)`s contributions to music have been celebrated across the industry, with his students achieving accolades and his work being synonymous with excellence at Rhapsody Academy of Music.',
+      'Kuttiyachan`s contributions to music have been celebrated across the industry, with his students achieving accolades and his work being synonymous with excellence at Rhapsody Academy of Music.',
 
     social_link: [
       {

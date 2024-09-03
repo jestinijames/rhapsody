@@ -20,12 +20,12 @@ const WhyUs = () => {
           <CardDetails
             card_desc={
               <>
-                <p className='text-secondary-foreground mb-7'>
+                <p className='text-primary-foreground-rhapsody mb-7'>
                   "Studies show that half of aspiring musicians quit due to a
                   lack of support and motivation, with disorganized lessons only
                   adding to their frustration."
                 </p>
-                <p className='text-secondary-foreground mb-7'>
+                <p className='text-primary-foreground-rhapsody mb-7'>
                   "Feeling discouraged? Just like Bobby McFerrin's hit 'Don't
                   Worry, Be Happy,' we're here to turn things around with joyful
                   lessons that ignite your creativity and offer unwavering
