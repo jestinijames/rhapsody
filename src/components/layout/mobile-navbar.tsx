@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 
 import useOverflowHidden from '@/hooks/use-overflow-hidden';
@@ -19,20 +19,6 @@ const MobileNavbar = () => {
   const [offcanvaseActive, setOffcanvaseActive] = useState(false);
 
   useOverflowHidden(isMenuActive);
-
-  // Add the force repaint useEffect here
-  useEffect(() => {
-    if (isMenuActive) {
-      document
-        .querySelector('.mobile-navbar nav')
-        ?.classList.add('force-repaint');
-      setTimeout(() => {
-        document
-          .querySelector('.mobile-navbar nav')
-          ?.classList.remove('force-repaint');
-      }, 50);
-    }
-  }, [isMenuActive]);
 
   const handleDropDown = (
     id: number,
@@ -64,7 +50,7 @@ const MobileNavbar = () => {
               <nav
                 className={`max-h-screen min-h-screen overflow-y-auto bg-[#f9fffc] absolute transition-all duration-500 ${
                   isMenuActive ? 'right-0' : 'sm:-right-full -right-[150%]'
-                } top-0 z-[1000] py-4 px-4`}
+                } top-0 z-[9999] py-4 px-4`}
               >
                 <div className='flex justify-between items-center'>
                   <Link href='/' className='text-secondary-rhapsody'>
