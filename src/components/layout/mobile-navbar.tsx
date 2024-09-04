@@ -1,16 +1,14 @@
 'use client';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 
-import { cn } from '@/lib/utils';
 import useOverflowHidden from '@/hooks/use-overflow-hidden';
 
 import Offcanvas from '@/components/layout/off-canvas';
 import OptimizedImage from '@/components/ui/craft/optimized-image';
 
 import MenuIcon from '@/assets/icons/menu-icon';
-import Search from '@/assets/icons/search';
 import { menuList } from '@/constant/config';
 
 import { MenuListItem } from '@/types/types';
@@ -21,6 +19,20 @@ const MobileNavbar = () => {
   const [offcanvaseActive, setOffcanvaseActive] = useState(false);
 
   useOverflowHidden(isMenuActive);
+
+  // Add the force repaint useEffect here
+  useEffect(() => {
+    if (isMenuActive) {
+      document
+        .querySelector('.mobile-navbar nav')
+        ?.classList.add('force-repaint');
+      setTimeout(() => {
+        document
+          .querySelector('.mobile-navbar nav')
+          ?.classList.remove('force-repaint');
+      }, 50);
+    }
+  }, [isMenuActive]);
 
   const handleDropDown = (
     id: number,
@@ -39,7 +51,7 @@ const MobileNavbar = () => {
       <div className='bg-[#f9f9f9] relative overflow-x-clip px-2.5'>
         <div className='container-fluid '>
           <div className='flex items-center justify-between py-4'>
-            <Link href='/' className='text-primary-foreground'>
+            <Link href='/' className='text-secondary-rhapsody'>
               <OptimizedImage
                 useSkeleton
                 height='31'
@@ -50,12 +62,12 @@ const MobileNavbar = () => {
             </Link>
             <div>
               <nav
-                className={`max-h-screen min-h-screen overflow-y-auto bg-[#F9FFFC] absolute transition-all duration-500 ${
+                className={`max-h-screen min-h-screen overflow-y-auto bg-[#f9fffc] absolute transition-all duration-500 ${
                   isMenuActive ? 'right-0' : 'sm:-right-full -right-[150%]'
-                } top-0 z-50 py-4 px-4`}
+                } top-0 z-[1000] py-4 px-4`}
               >
                 <div className='flex justify-between items-center'>
-                  <Link href='/' className='text-primary-foreground'>
+                  <Link href='/' className='text-secondary-rhapsody'>
                     <OptimizedImage
                       useSkeleton
                       height='31'
@@ -89,9 +101,9 @@ const MobileNavbar = () => {
                           <Link
                             href={path}
                             data-id={id}
-                            className={`nav-link text-xl font-medium px-4 py-4 flex items-center gap-2 transition-all duration-500 text-primary-foreground ${
+                            className={`nav-link text-xl font-medium px-4 py-4 flex items-center gap-2 transition-all duration-500  ${
                               dropDownActive === id
-                                ? 'bg-primary text-secondary-foreground'
+                                ? 'bg-secondary-rhapsody text-primary-foreground-rhapsody'
                                 : ''
                             }`}
                           >
@@ -120,7 +132,7 @@ const MobileNavbar = () => {
                             <ul
                               className={`transition-all duration-500 max-h-0 overflow-hidden px-4 pb-2 ${
                                 dropDownActive === id
-                                  ? 'max-h-[500px] bg-primary text-secondary-foreground '
+                                  ? 'max-h-[500px] bg-secondary-rhapsody text-primary-foreground-rhapsody '
                                   : ''
                               }`}
                             >
@@ -145,7 +157,7 @@ const MobileNavbar = () => {
                             <ul
                               className={`transition-all duration-500 max-h-0 overflow-hidden px-4 pb-2 ${
                                 dropDownActive === id
-                                  ? 'max-h-[700px] bg-primary text-secondary-foreground '
+                                  ? 'max-h-[700px] bg-secondary-rhapsody text-primary-foreground-rhapsody '
                                   : ''
                               }`}
                             >
@@ -181,18 +193,16 @@ const MobileNavbar = () => {
                       );
                     }
                   )}
-                  <div className='flex items-center pt-5'>
-                    <li
-                      className={cn(
-                        `text-primary-foreground px-6  cursor-pointer`
-                      )}
-                      onClick={() => {
-                        setOffcanvaseActive(true), setIsMenuActive(false);
-                      }}
-                    >
-                      <Search height='24' width='24' />
-                    </li>
-                  </div>
+
+                  <li
+                    onClick={() => {
+                      setOffcanvaseActive(true), setIsMenuActive(false);
+                    }}
+                  >
+                    <span className='nav-link text-xl font-medium px-4 py-4 flex items-center gap-2 transition-all duration-500 text-primary-foreground '>
+                      Search
+                    </span>
+                  </li>
                 </ul>
               </nav>
               <div

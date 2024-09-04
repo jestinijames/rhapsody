@@ -38,12 +38,11 @@ const Banner = () => {
               />
             </h1>
             <Link href='/contact' className='mt-16 inline-block'>
-              <Button className='sm:px-10 px-4 after:left-0 after:bg-primary-rhapsody text-primary-foreground-rhapsody border-secondary hover:text-primary-foreground-rhapsody'>
-                {' '}
-                Book a free consultation <RightArrow
-                  width='35'
-                  height='22'
-                />{' '}
+              <Button
+                variant='boutline'
+                className='sm:px-10 px-4 after:left-0 after:bg-primary-rhapsody text-primary-foreground-rhapsody border-secondary hover:text-primary-foreground-rhapsody'
+              >
+                Book a free consultation <RightArrow width='35' height='22' />
               </Button>
             </Link>
           </div>

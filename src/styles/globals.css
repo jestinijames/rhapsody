@@ -399,3 +399,8 @@ body {
 .font-poppins {
   font-family: var(--font-poppins);
 }
+
+/* Safari issue */
+.force-repaint {
+  transform: scale(1);
+}
