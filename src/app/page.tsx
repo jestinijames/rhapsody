@@ -13,8 +13,8 @@ import PageLayout from '@/components/layout';
 
 export default function HomePage() {
   return (
-    <PageLayout header='1'>
-      <main>
+    <PageLayout header='3'>
+      <main role='main' className='main relative z-10'>
         <Banner />
         <Vision />
         <Counter />

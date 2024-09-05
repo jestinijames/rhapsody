@@ -143,15 +143,15 @@ export const menuList: MenuListItem[] = [
       },
     ],
   },
-  {
-    id: 3,
-    name: 'Contact',
-    path: '/contact',
-    isMegaMenu: false,
-    isDropdown: false,
-    dropdownContent: [],
-    megaMenuContent: [],
-  },
+  // {
+  //   id: 3,
+  //   name: 'Contact',
+  //   path: '/contact',
+  //   isMegaMenu: false,
+  //   isDropdown: false,
+  //   dropdownContent: [],
+  //   megaMenuContent: [],
+  // },
 ];
 
 export const galleryData = [

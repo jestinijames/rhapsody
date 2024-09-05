@@ -50,7 +50,7 @@ const MobileNavbar = () => {
               <nav
                 className={`max-h-screen min-h-screen overflow-y-auto bg-[#f9fffc] absolute transition-all duration-500 ${
                   isMenuActive ? 'right-0' : 'sm:-right-full -right-[150%]'
-                } top-0 z-[9999] py-4 px-4`}
+                } top-0 z-[1000] py-4 px-4`}
               >
                 <div className='flex justify-between items-center'>
                   <Link href='/' className='text-secondary-rhapsody'>
