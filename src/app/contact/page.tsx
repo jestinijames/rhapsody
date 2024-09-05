@@ -9,7 +9,7 @@ import from_img from '@/assets/images/contact.jpg';
 
 export default function ContactPage() {
   return (
-    <PageLayout header='2'>
+    <PageLayout header='3'>
       <main>
         <section>
           <div className='container-fluid '>

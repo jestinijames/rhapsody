@@ -64,7 +64,7 @@ const pricingList = [
 
 export default function GuitarPage() {
   return (
-    <PageLayout header='2'>
+    <PageLayout header='3'>
       <main>
         <InstrumentDescription
           title='Guitar'

@@ -9,7 +9,7 @@ import Process from '@/components/why-us/process';
 
 export default function WhyUsPage() {
   return (
-    <PageLayout header='2'>
+    <PageLayout header='3'>
       <main>
         <PageTags />
         <HolisiticMusicianshipProgram />

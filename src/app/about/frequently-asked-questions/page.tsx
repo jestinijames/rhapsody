@@ -4,7 +4,7 @@ import PageLayout from '@/components/layout';
 
 export default function FAQPage() {
   return (
-    <PageLayout header='2'>
+    <PageLayout header='3'>
       <main>
         <Faq />
         <Feedback />

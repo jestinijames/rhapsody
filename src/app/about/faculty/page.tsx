@@ -7,7 +7,7 @@ import { teamData } from '@/constant/config';
 
 export default function FacultyPage() {
   return (
-    <PageLayout header='2'>
+    <PageLayout header='3'>
       <main>
         <section className='pt-20'>
           <div className='container-fluid '>

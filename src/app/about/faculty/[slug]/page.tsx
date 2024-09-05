@@ -9,7 +9,7 @@ export default function FacultySinglePage({
   params: { slug: string };
 }) {
   return (
-    <PageLayout header='2'>
+    <PageLayout header='3'>
       <main>
         <TeamSingle slug={params.slug} />
         <Feedback />
