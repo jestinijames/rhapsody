@@ -8,7 +8,7 @@ import { tagList } from '@/constant/config';
 
 const PageTags = () => {
   return (
-    <div className='container '>
+    <div className='container mt-20 '>
       <div>
         <div className='pt-[54px] flex gap-3 flex-wrap'>
           {tagList.map(({ id, link, tag }) => {

@@ -117,7 +117,7 @@ export function HeaderThree() {
                         href={path}
                         data-id={id}
                         className={cn(
-                          `nav-link text-xl font-medium px-7 py-[34px] flex items-center gap-2 text-primary-foreground-rhapsody  group-hover:bg-secondary-rhapsody group-hover:text-primary-foreground-rhapsody `
+                          `nav-link text-xl font-medium px-7 py-[34px] flex items-center gap-2 text-primary-rhapsody  group-hover:bg-secondary-rhapsody group-hover:text-primary-foreground-rhapsody `
                         )}
                       >
                         {name}
@@ -154,58 +154,6 @@ export function HeaderThree() {
                   );
                 }
               )}
-              {/* <li className='ml-10 mr-4 mt-1 hidden xl:block'>
-                <Link className='no-child-pointers block' href='/'>
-                  <Image
-                    data-loaded='false'
-                    onLoad={(event) => {
-                      event.currentTarget.setAttribute('data-loaded', 'true');
-                    }}
-                    className='data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10'
-                    src={logo}
-                    alt='Rhapsody Logo'
-                    height='31'
-                    width='219'
-                  />
-                </Link>
-              </li>
-              <li className='block mx-4 my-0 xl:mx-2 xl:my-4'>
-                <Link
-                  className={`group px-0 pt-4 pb-3 flex items-center w-full  font-regular border-b border-primary-foreground-rhapsody border-opacity-40 xl:hover:text-primary-rhapsody transition-colors xl:inline xl:px-2 xl:py-0 xl:border-none ${
-                    pathname === '/about/why-us' ? 'text-primary-rhapsody' : ''
-                  }  xl:font-bold`}
-                  href='/about/why-us'
-                >
-                  <span>Why Us</span>
-                </Link>
-              </li>
-              <li className='block mx-4 my-0 xl:mx-2 xl:my-4'>
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setToggleServices(!toggleServices);
-                  }}
-                  className={`group px-0 pt-4 pb-3 flex items-center w-full  font-regular border-b border-primary-foreground-rhapsody border-opacity-40 xl:hover:text-primary-rhapsody transition-colors xl:inline xl:px-2 xl:py-0 xl:border-none ${
-                    pathname === '/what-we-believe'
-                      ? 'text-primary-rhapsody'
-                      : ''
-                  }  xl:font-bold ${toggleServices ? 'active' : ''}`}
-                  aria-expanded={toggleServices}
-                >
-                  <span>Services</span>
-                </button>
-             
-              </li>
-              <li className='block mx-4 my-0 xl:mx-2 xl:my-4'>
-                <Link
-                  className={`group px-0 pt-4 pb-3 flex items-center w-full  font-regular border-b border-primary-foreground-rhapsody border-opacity-40 xl:hover:text-primary-rhapsody transition-colors xl:inline xl:px-2 xl:py-0 xl:border-none ${
-                    pathname === '/about/faculty' ? 'text-primary-rhapsody' : ''
-                  }  xl:font-bold`}
-                  href='/about/faculty'
-                >
-                  <span>Faculty</span>
-                </Link>
-              </li> */}
             </ul>
           </div>
 
@@ -214,7 +162,7 @@ export function HeaderThree() {
               <li className='block mx-4 my-0 xl:mx-2 xl:my-4 xl:ml-4'>
                 <p>
                   <Link
-                    className='btn items-center group -my-4 btn-nav-contact text-primary-foreground-rhapsody'
+                    className='btn items-center group -my-4 btn-nav-contact !text-primary-rhapsody hover:!text-primary-foreground-rhapsody'
                     href='/contact'
                   >
                     <span>Contact</span>
@@ -251,7 +199,7 @@ export function HeaderThree() {
                 height={62}
               />
             </Link>
-            <Link className='block  font-bold text-sm' href='/contact-us'>
+            <Link className='block  font-bold text-sm' href='/contact'>
               Contact
             </Link>
           </div>
@@ -387,7 +335,8 @@ export function HeaderThree() {
                 }
               )}
             </ul>
-            <ul className='flex flex-wrap flex-col xl:flex-row xl:items-center list-none pl-0 my-0'>
+
+            {/* <ul className='flex flex-wrap flex-col xl:flex-row xl:items-center list-none pl-0 my-0'>
               <li className='block mx-4 my-0 xl:mx-2 xl:my-4 xl:ml-4'>
                 <p>
                   <Link
@@ -398,7 +347,7 @@ export function HeaderThree() {
                   </Link>
                 </p>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

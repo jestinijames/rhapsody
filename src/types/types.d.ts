@@ -166,3 +166,27 @@ export interface TeamCardProps {
   prantCalss?: string;
   slug: string;
 }
+
+// Define the type of the icon component
+interface IconComponentProps {
+  width?: string;
+  height?: string;
+  className: string;
+  ref: any;
+}
+
+// Define your Icons object and ensure each key is typed as a React functional component
+export const ProcessIcons = {
+  listen: ListenIcon,
+  celebrate: CelebrateIcon,
+  mic: MicIcon,
+};
+// // Define the keys of the Icons object
+// export type IconKeys = keyof typeof Icons;
+
+// // Interface for the process item
+export interface ProcessItem {
+  id: string;
+  process_name: string;
+  icon: keyof typeof ProcessIcons;
+}

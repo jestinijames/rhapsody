@@ -452,7 +452,7 @@ body {
 .main-header.scrolled .desktop-nav,
 .nav-dropdown-open .desktop-nav {
   --tw-bg-opacity: 1;
-  background-color: var(--secondary-foreground-rhapsody);
+  background-color: var(--secondary-rhapsody);
 }
 
 .mobile-nav-content {

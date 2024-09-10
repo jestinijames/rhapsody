@@ -1,3 +1,6 @@
+import CelebrateIcon from '@/assets/icons/celebrate-icon';
+import ListenIcon from '@/assets/icons/listen-icon';
+import MicIcon from '@/assets/icons/mic-icon';
 import feedback_bg from '@/assets/images/feedback-image.jpg';
 import img_1 from '@/assets/images/gallery-1.jpg';
 import img_2 from '@/assets/images/gallery-2.jpg';
@@ -11,7 +14,7 @@ import project_img_3 from '@/assets/images/project-overview-img-3.jpg';
 import team_1 from '@/assets/images/team-1.jpg';
 import team_2 from '@/assets/images/team-2.jpg';
 
-import { MenuListItem } from '@/types/types';
+import { MenuListItem, ProcessItem } from '@/types/types';
 
 export const siteConfig = {
   title: 'RHAPSODY ACADEMY OF MUSIC',
@@ -314,24 +317,31 @@ export const lessonDuration = [
   },
 ];
 
-export const processList = [
+export const processList: ProcessItem[] = [
   {
     id: '01',
     process_name:
       "Our experienced faculty will assess your skill level to determine the best starting point and set realistic goals for you within a 3-month semester. They'll guide you step by step, with monthly assignments designed to help you achieve those goals.",
+    icon: 'listen',
   },
   {
     id: '02',
     process_name:
       'We celebrate your achievements at each level by sending you surprise musical gifts to motivate and inspire you on your journey.',
+    icon: 'celebrate',
   },
-
   {
     id: '03',
     process_name:
       'We guarantee exceptional support throughout each lesson, ensuring that your learning experience is light, enjoyable, and entirely achievable.',
+    icon: 'mic',
   },
 ];
+export const Icons = {
+  listen: ListenIcon,
+  celebrate: CelebrateIcon,
+  mic: MicIcon,
+};
 
 export const collegesData = [
   {
@@ -398,7 +408,7 @@ export const faqData = [
     id: '4',
     question: 'What ages do you teach?',
     ans: `
-      We welcome students of all ages, from young beginners to adults. Our tailored programs ensure that every student, regardless of age, receives the appropriate level of instruction and support.
+      We welcome students from age 5 and up, including young beginners and adults. Our tailored programs ensure that every student, regardless of age, receives the appropriate level of instruction and support.
       `,
   },
   {
@@ -413,7 +423,7 @@ export const faqData = [
     id: '6',
     question: 'Are your teachers/instructors qualified?',
     ans: `
-    Yes, all our instructors are highly qualified professionals with extensive experience in both teaching and performing. They are passionate about helping students achieve their musical potential.
+    Yes, all our instructors are highly qualified professionals with extensive experience in both teaching and performing. They are certified by the Trinity College of Music, London, or have proven equivalent certifications, and are passionate about helping students achieve their musical potential.
     `,
   },
 ];
