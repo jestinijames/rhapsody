@@ -107,6 +107,12 @@ interface SectionTitleProps {
   button_text?: string;
 }
 
+interface VideoPortfolioProps {
+  text_muted?: string;
+  bg_muted?: string;
+  after_bg_muted?: string;
+}
+
 interface ServiceCardProps {
   id: string;
   service_name: string;

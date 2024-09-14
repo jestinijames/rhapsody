@@ -7,6 +7,7 @@ import Banner from '@/components/homepage/banner';
 import Counter from '@/components/homepage/counter';
 import Feedback from '@/components/homepage/feedback';
 import Programs from '@/components/homepage/programs';
+import VideoPortfolio from '@/components/homepage/video-portfolio';
 import Vision from '@/components/homepage/vision';
 import WhyUs from '@/components/homepage/why-us';
 import PageLayout from '@/components/layout';
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Counter />
         <WhyUs />
         <Programs />
+        <VideoPortfolio />
         <Feedback />
       </main>
     </PageLayout>
