@@ -17,11 +17,12 @@ export default function HomePage() {
     <PageLayout header='3'>
       <main role='main' className='main relative z-10'>
         <Banner />
+        <VideoPortfolio />
         <Vision />
         <Counter />
         <WhyUs />
         <Programs />
-        <VideoPortfolio />
+
         <Feedback />
       </main>
     </PageLayout>

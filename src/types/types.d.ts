@@ -196,3 +196,9 @@ export interface ProcessItem {
   process_name: string;
   icon: keyof typeof ProcessIcons;
 }
+
+interface SubHeadingProps {
+  title: string;
+  description: string;
+  color?: string;
+}

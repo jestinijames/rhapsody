@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
@@ -10,23 +9,16 @@ import '/node_modules/react-modal-video/css/modal-video.css';
 import { cardSlideAnimation, cn } from '@/lib/utils';
 import useOverflowHidden from '@/hooks/use-overflow-hidden';
 
-import { Button } from '@/components/ui/button';
-import SectionTitle from '@/components/ui/craft/section-title';
-
 import PlayIcon from '@/assets/icons/play-icon';
 import RightArrow from '@/assets/icons/right-arrow';
 import video_thumb from '@/assets/images/video-image.png';
 
 import { VideoPortfolioProps } from '@/types/types';
 
-const VideoPortfolio = ({
-  text_muted,
-  bg_muted,
-  after_bg_muted,
-}: VideoPortfolioProps) => {
+const VideoPortfolio = ({ after_bg_muted }: VideoPortfolioProps) => {
   return (
     <section className='pt-20'>
-      <div className='container-fluid '>
+      {/* <div className='container-fluid '>
         <SectionTitle
           sectionName='Video'
           sectionTitle='Symphony of Learning'
@@ -34,7 +26,7 @@ const VideoPortfolio = ({
           bg_muted={bg_muted}
           text_muted={text_muted}
         />
-      </div>
+      </div> */}
       <div className='container-fluid lg:pt-30 2sm:pt-20 pt-14'>
         <div
           className={cn(
@@ -44,12 +36,13 @@ const VideoPortfolio = ({
           <div className='container flex lg:flex-row flex-col justify-between relative z-10'>
             <div className='2xl:max-w-[637px] lg:max-w-[500px] w-full'>
               <h4 className='text-primary-foreground-rhapsody text-3xl 2sm:text-4xl font-bold leading-135'>
-                Step into the harmonious world of Symphony of Learning
+                Discover the Power of Music
               </h4>
               <p className='text-primary-foreground-rhapsody mt-5'>
-                Watch our musical journey come to life through immersive videos
-                that showcase our talent, innovation, and the evolution of music
-                mastery from concept to performance.
+                Immerse yourself in the profound impact of music in every moment
+                of life. Join us as we explore how melodies shape our
+                experiences and how we can help you unlock your musical
+                potential.
               </p>
               <ul className='mt-[35px]'>
                 <li className='text-primary-foreground-rhapsody flex items-center gap-[27px]'>
@@ -71,14 +64,6 @@ const VideoPortfolio = ({
                   </span>{' '}
                 </li>
               </ul>
-              <Link href='/why-us' className='mt-[70px] inline-block'>
-                <Button
-                  variant='boutline'
-                  className='border-primary-foreground-rhapsody text-primary-rhapsody sm:px-10 px-3 after:hover:bg-primary-rhapsody after:left-0 hover:text-primary-foreground-rhapsody'
-                >
-                  Explore Our Process <RightArrow width='35' height='22' />
-                </Button>
-              </Link>
             </div>
             <VideoPlay img={video_thumb} />
           </div>
@@ -120,10 +105,10 @@ function VideoPlay({ img }: { img: string | StaticImageData }) {
 
         <div
           onClick={() => setOpen(true)}
-          className=' md:w-[109px] md:h-[109px] w-24 h-24 rounded-full text-primary-foreground absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-foreground-rhapsody cursor-pointer flex justify-center items-center'
+          className=' md:w-[60px] md:h-[60px] w-[60px] h-[60px] rounded-full text-primary-foreground absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-foreground-rhapsody cursor-pointer flex justify-center items-center'
         >
-          <span className='ml-2.5'>
-            <PlayIcon width='30' height='36' />
+          <span className='ml-2'>
+            <PlayIcon width='15' height='18' />
           </span>
         </div>
       </motion.div>

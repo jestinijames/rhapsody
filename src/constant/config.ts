@@ -13,6 +13,7 @@ import project_img_2 from '@/assets/images/project-overview-img-2.jpg';
 import project_img_3 from '@/assets/images/project-overview-img-3.jpg';
 import team_1 from '@/assets/images/team-1.jpg';
 import team_2 from '@/assets/images/team-2.jpg';
+import team_3 from '@/assets/images/team-3.jpg';
 
 import { MenuListItem, ProcessItem } from '@/types/types';
 
@@ -568,6 +569,53 @@ export const teamData = [
       {
         id: 4,
         link: 'TW',
+        media: 'LI',
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    img: team_3,
+    name: 'Sankey Thomas',
+    position: 'Piano, Violin',
+    slug: 'sankey-thomas',
+    email: 'sankeythomas@gmail.com',
+    bio: 'Sankey Thomas, with over 5 years of dedicated experience, is a passionate music educator who has helped students of all ages discover the joy of music. Specializing in piano instruction, he also teaches violin to beginner and intermediate students, offering a well-rounded approach to his lessons.',
+    focus:
+      'Sankey specializes in piano and provides beginner to intermediate violin instruction, adapting his lessons to fit the needs and skills of his students.',
+    specializations:
+      'His expertise lies in creating personalized learning experiences that enhance both technical skills and musical expression, guiding students through their musical journey.',
+    philosophy:
+      'Sankey believes that no two students are the same and tailors his teaching style to meet the unique needs, talents, and learning speeds of each student.',
+    approach:
+      'With a personalized and encouraging approach, Sankey ensures each lesson is tailored to the student’s aspirations, helping them build confidence and skill.',
+    background:
+      'Sankey has been an instructor at Angel School of Music in Kothamangalam, Kerala, where he has developed strong teaching methods and built deep connections with his students.',
+    credentials:
+      'Certified by Trinity College of London, Sankey blends his technical expertise with a deep understanding of music instruction.',
+    achievements:
+      'Sankey is committed to supporting his students from their first note to mastery, creating a lasting impact on their musical journeys.',
+
+    social_link: [
+      {
+        id: 1,
+        link: '',
+        media: 'FB',
+      },
+      {
+        id: 2,
+        link: '',
+        media: 'IN',
+      },
+      {
+        id: 3,
+        link: '',
+        media: 'TW',
+      },
+      {
+        id: 4,
+        link: '',
         media: 'LI',
       },
     ],

@@ -1,8 +1,17 @@
 import React from 'react';
 
-const PlayIcon = ({ width, height }: { width?: string; height?: string }) => {
+const PlayIcon = ({
+  width,
+  height,
+  className,
+}: {
+  width?: string;
+  height?: string;
+  className?: string;
+}) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox='0 0 30 36'
