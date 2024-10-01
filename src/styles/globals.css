@@ -847,3 +847,63 @@ body {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+
+/* Video */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.play-icon-container {
+  animation: pulse 2s infinite;
+}
+
+@keyframes glowing-border {
+  0% {
+    box-shadow: 0 0 5px rgba(214, 125, 41, 0.5),
+      0 0 10px rgba(214, 125, 41, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(214, 125, 41, 0.8),
+      0 0 30px rgba(214, 125, 41, 0.8), 0 0 40px rgba(214, 125, 41, 1),
+      0 0 50px rgba(214, 125, 41, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(214, 125, 41, 0.5),
+      0 0 10px rgba(214, 125, 41, 0.5);
+  }
+}
+
+.glow-border {
+  border: 4px solid transparent;
+  animation: glowing-border 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    border-color: rgba(214, 125, 41, 0.7); /* Initial border color */
+    box-shadow: 0 0 5px rgba(214, 125, 41, 0.5); /* Initial shadow */
+  }
+  50% {
+    border-color: rgba(214, 125, 41, 1); /* Brighter border color */
+    box-shadow: 0 0 15px rgba(214, 125, 41, 0.7); /* Brighter shadow */
+  }
+  100% {
+    border-color: rgba(214, 125, 41, 0.7); /* Reset to initial border color */
+    box-shadow: 0 0 5px rgba(214, 125, 41, 0.5); /* Reset to initial shadow */
+  }
+}
+
+.animate-glow {
+  animation: glow 1.5s infinite; /* Apply the glow animation */
+}

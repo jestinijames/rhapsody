@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
+import React from 'react';
 import ModalVideo from 'react-modal-video';
 
 import '/node_modules/react-modal-video/css/modal-video.css';
@@ -39,10 +40,11 @@ const VideoPortfolio = ({ after_bg_muted }: VideoPortfolioProps) => {
                 Discover the Power of Music
               </h4>
               <p className='text-primary-foreground-rhapsody mt-5'>
-                Immerse yourself in the profound impact of music in every moment
-                of life. Join us as we explore how melodies shape our
-                experiences and how we can help you unlock your musical
-                potential.
+                Watch the video to understand our process and see how we bring
+                music into every aspect of life. Immerse yourself in the
+                profound impact of music in every moment, and join us as we
+                explore how melodies shape our experiences and help unlock your
+                musical potential.
               </p>
               <ul className='mt-[35px]'>
                 <li className='text-primary-foreground-rhapsody flex items-center gap-[27px]'>
@@ -85,7 +87,7 @@ function VideoPlay({ img }: { img: string | StaticImageData }) {
         whileInView='onscreen'
         variants={cardSlideAnimation()}
         viewport={{ once: true, amount: 0.2 }}
-        className='relative max-h-[400px] mt-10 lg:mt-0 border-4 border-primary-rhapsody'
+        className='relative max-h-[400px] mt-10 lg:mt-0 border-4 glow-border border-primary-rhapsody' // Added 'glow-border' here
       >
         <Image
           src={img}
@@ -105,10 +107,10 @@ function VideoPlay({ img }: { img: string | StaticImageData }) {
 
         <div
           onClick={() => setOpen(true)}
-          className=' md:w-[60px] md:h-[60px] w-[60px] h-[60px] rounded-full text-primary-foreground absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-foreground-rhapsody cursor-pointer flex justify-center items-center'
+          className='play-icon-container md:w-[60px] md:h-[60px] w-[60px] h-[60px] rounded-full text-primary-foreground absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-foreground-rhapsody cursor-pointer flex justify-center items-center'
         >
           <span className='ml-2'>
-            <PlayIcon width='15' height='18' />
+            <PlayIcon width='30' height='36' />
           </span>
         </div>
       </motion.div>

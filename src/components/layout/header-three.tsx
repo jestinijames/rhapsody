@@ -8,6 +8,7 @@ import useOverflowHidden from '@/hooks/use-overflow-hidden';
 
 import DropDownMenu from '@/components/layout/drop-down-menu';
 import MegaMenu from '@/components/layout/mega-menu';
+import SocialMediaList from '@/components/layout/socials';
 
 import logo from '@/assets/images/logo-full.png';
 import { menuList } from '@/constant/config';
@@ -159,6 +160,17 @@ export function HeaderThree() {
 
           <div className='ml-auto mr-8'>
             <ul className='flex flex-wrap flex-col xl:flex-row xl:items-center list-none pl-0 my-0'>
+              {/* <li className='block mx-4 my-0 xl:mx-2 xl:my-4 xl:ml-4'>
+                <p className='font-bold'>
+                  <span>Call Us:</span> {siteConfig.phone1} /{' '}
+                  {siteConfig.phone2}
+                </p>
+              </li> */}
+              <li className='block mx-4 my-0 xl:mx-2 xl:my-4 xl:ml-4 !text-primary-rhapsody hover:!text-primary-foreground-rhapsody'>
+                <div className='pl-5'>
+                  <SocialMediaList />
+                </div>
+              </li>
               <li className='block mx-4 my-0 xl:mx-2 xl:my-4 xl:ml-4'>
                 <p>
                   <Link

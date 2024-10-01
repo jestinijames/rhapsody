@@ -12,7 +12,6 @@ import { TeamCardProps } from '@/types/types';
 
 const TeamCard: React.FC<TeamCardProps> = ({
   img,
-  social_link,
   name,
   position,
   text_muted,
@@ -30,7 +29,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
     >
       <div className='relative group hover-underline'>
         <div className='relative'>
-          <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:opacity-100 h-0 w-0 opacity-0 flex justify-center items-center bg-[#D2E0D9CC]'>
+          {/* <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:opacity-100 h-0 w-0 opacity-0 flex justify-center items-center bg-[#D2E0D9CC]'>
             <ul className='flex items-center gap-7.5'>
               {social_link.map(({ id, link, media }) => {
                 return (
@@ -47,7 +46,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
                 );
               })}
             </ul>
-          </div>
+          </div> */}
           <OptimizedImage
             useSkeleton
             src={img}

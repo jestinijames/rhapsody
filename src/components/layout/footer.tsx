@@ -108,6 +108,22 @@ const Footer = () => {
                   >
                     Email: <span>{siteConfig.email}</span>
                   </Link>
+                  <div className='text-lg  text-primary-foreground-rhapsody'>
+                    Call Us:{' '}
+                    <Link
+                      href={`tel:${siteConfig.phone1}`}
+                      className='  hover:text-primary-rhapsody  transition-colors delay-200'
+                    >
+                      {siteConfig.phone1}
+                    </Link>{' '}
+                    /{' '}
+                    <Link
+                      href={`tel:${siteConfig.phone2}`}
+                      className='  hover:text-primary-rhapsody  transition-colors delay-200'
+                    >
+                      {siteConfig.phone2}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

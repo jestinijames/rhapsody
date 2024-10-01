@@ -1,6 +1,8 @@
 'use client';
+import Link from 'next/link';
 import React from 'react';
 
+import { Button } from '@/components/ui/button';
 import SectionTitle from '@/components/ui/craft/section-title';
 
 import { PricingCardProps } from '@/types/types';
@@ -22,15 +24,17 @@ const InstrumentPricing = ({
       <div className='container lg:pt-30 2sm:pt-20 pt-14'>
         <div>
           <div className='space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0'>
-            {pricingList.map(({ id, price, minutes, features }, index) => (
-              <PricingCard
-                key={index}
-                id={id}
-                price={price}
-                minutes={minutes}
-                features={features}
-              />
-            ))}
+            {pricingList.map(
+              ({ id, onlinePrice, inHomePrice, features }, index) => (
+                <PricingCard
+                  key={index}
+                  id={id}
+                  onlinePrice={onlinePrice}
+                  inHomePrice={inHomePrice}
+                  features={features}
+                />
+              )
+            )}
           </div>
         </div>
       </div>
@@ -40,48 +44,72 @@ const InstrumentPricing = ({
 
 function PricingCard({
   id,
-
-  price,
-  minutes,
+  onlinePrice,
+  inHomePrice,
   features,
 }: PricingCardProps) {
   return (
-    // <div className='-mt-6 lg:-mt-0'>
-    //   <OutlineSvgText text={id} />
-    //   <Title title_text={minutes} className='mb-1' />
-    //   <div>
-    //     <p className='font-semibold'>{price}</p>
-    //   </div>
-    //   <div className='mt-5 mb-7.5'>
+    <div
+      className={`flex flex-col p-6 mx-auto max-w-lg text-center text-secondary-rhapsody bg-primary-foreground-rhapsody
+      ${id === '45' ? ' transform scale-105' : ''} 
+      rounded-lg border border-gray-200 shadow-md xl:p-8 
+      ${
+        id === '45'
+          ? 'border-4 border-primary-rhapsody shadow-2xl animate-glow'
+          : ''
+      } transition-transform duration-300`}
+    >
+      <h2 className='mb-4 text-2xl font-extrabold leading-110 text-primary-rhapsody font-farro'>
+        {id} Minutes
+      </h2>
 
-    <div className='flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-transparent rounded-lg border border-gray-100 shadow  xl:p-8  '>
-      <h3 className='mb-4 text-2xl font-semibold'>{id + ' ' + minutes}</h3>
-      {/* <p className='font-light text-gray-500 sm:text-lg'>
-        Best option for personal use & for your next project.
-      </p> */}
-      <div className='flex justify-center items-baseline my-8'>
-        <span className='mr-2 text-5xl font-extrabold'>{price}</span>
-        <span className='text-gray-500'>/session</span>
+      {/* Online Pricing Section */}
+      <div className='mb-4'>
+        <h4 className='font-bold text-lg'>ONLINE </h4>
+        <p className='font-semibold'>{onlinePrice}/LESSON</p>
+        <ul className='my-4 space-y-2 text-left'>
+          {features.map((feature, index) => (
+            <li key={index} className='flex items-center space-x-3'>
+              <svg
+                className='flex-shrink-0 w-5 h-5 text-primary-rhapsody'
+                fill='currentColor'
+                viewBox='0 0 20 20'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
+                  clipRule='evenodd'
+                ></path>
+              </svg>
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul role='list' className='mb-8 space-y-4 text-left'>
-        {features.map((feature, index) => (
-          <li key={index} className='flex items-center space-x-3'>
-            <svg
-              className='flex-shrink-0 w-5 h-5 text-green-500 '
-              fill='currentColor'
-              viewBox='0 0 20 20'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                fill-rule='evenodd'
-                d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                clip-rule='evenodd'
-              ></path>
-            </svg>
-            <span>{feature}</span>
-          </li>
-        ))}
-      </ul>
+
+      {/* In-Home Pricing Section - HIDING FOR NOW */}
+      <div className='hidden'>
+        <h4 className='font-bold text-lg'>IN-HOME</h4>
+        <p className='font-semibold'>{inHomePrice}/LESSON</p>
+      </div>
+
+      {/* Call to action */}
+      <div className='mt-6'>
+        <Link href='/contact'>
+          <Button
+            variant='boutline'
+            className='flex items-center justify-center gap-3 text-xl font-bold text-secondary-rhapsody  border-2 border-secondary-rhapsody  hover:text-primary-rhapsody !px-5 !py-[7.5px] whitespace-nowrap w-full relative after:absolute after:left-0 after:right-0 after:top-0 after:bg-secondary after:w-full after:h-0 hover:after:h-full after:transition-all after:duration-500 after:z-[-1] hover:after:bg-secondary-rhapsody transition-all duration-500'
+          >
+            Book Now
+          </Button>
+        </Link>
+      </div>
+
+      {/* Additional information */}
+      <p className='mt-6 text-xs italic'>
+        All prices are in Canadian dollars (CAD).
+      </p>
     </div>
   );
 }

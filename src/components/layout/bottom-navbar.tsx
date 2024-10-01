@@ -2,6 +2,7 @@
 import Link from 'next/link';
 //import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import React from 'react';
 
 import { cn } from '@/lib/utils';
 import useStickyHeader from '@/hooks/use-sticky-header';

@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 import { cn } from '@/lib/utils';
 

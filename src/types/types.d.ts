@@ -149,8 +149,8 @@ export type SellerContentItem = {
 
 export interface PricingCardProps {
   id: string;
-  price: string;
-  minutes: string;
+  onlinePrice: string;
+  inHomePrice: string;
   features: string[];
 }
 
@@ -164,7 +164,7 @@ interface SocialLink {
 // Define the props for the TeamCard component
 export interface TeamCardProps {
   img: string | StaticImageData;
-  social_link: SocialLink[];
+  social_link?: SocialLink[];
   name: string;
   position: string;
   text_muted?: string;

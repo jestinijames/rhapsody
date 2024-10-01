@@ -23,6 +23,8 @@ export const siteConfig = {
   short: 'Start your musical journey today',
   url: 'https://tsnext-tw.thcl.dev',
   email: 'rhpsddmn@gmail.com',
+  phone1: '+1 (780) 266-2116',
+  phone2: '+1 (647) 523-4453',
 };
 
 export const servicesData = [
@@ -427,6 +429,13 @@ export const faqData = [
     Yes, all our instructors are highly qualified professionals with extensive experience in both teaching and performing. They are certified by the Trinity College of Music, London, or have proven equivalent certifications, and are passionate about helping students achieve their musical potential.
     `,
   },
+  {
+    id: '7',
+    question: 'What is your policy regarding makeup lessons?',
+    ans: `
+      Makeup lessons will not be provided if a class is canceled or if a student does not show up after the cancellation window has passed. We encourage students to communicate any cancellations at least 24 hours in advance to avoid losing their lesson opportunity.
+    `,
+  },
 ];
 
 export const performanceData = [
@@ -640,5 +649,65 @@ export const visionList = [
     item: 'Harmonizing Passion and Skill',
     item_desc:
       'Our mission is to blend passion with expertise, fostering a deeper connection to music and helping you achieve your fullest potential.',
+  },
+];
+
+export const sellerContent = [
+  {
+    id: '1',
+    header: 'Improves Cognitive Skills',
+    description:
+      'Learning to play the piano offers profound cognitive benefits that extend beyond music. Studies have shown that musicians, particularly pianists, tend to have expanded vocabularies, improved reading proficiency, and a heightened ability to perceive emotions in spoken language. The intricate process of reading music, coordinating hand movements, and maintaining rhythm engages multiple areas of the brain simultaneously. This mental workout can enhance memory, concentration, and problem-solving skills, making piano lessons a valuable investment in your overall cognitive development.',
+  },
+  {
+    id: '2',
+    header: 'Freedom of Creative Expression',
+    description:
+      'The piano is a powerful medium for expressing creativity and emotions. Whether you`re a beginner or an advanced player, the piano allows you to translate your innermost feelings into sound. As you progress, you`ll discover how the instrument can serve as a tool for storytelling, allowing you to convey complex emotions through melody, harmony, and rhythm. The ability to improvise and compose your own music further enhances this creative freedom, opening up endless possibilities for self-expression. Playing the piano is not just about following notes on a page. its about connecting with the music on a personal level and sharing your unique voice with the world.',
+  },
+  {
+    id: '3',
+    header: 'Versatility',
+    description:
+      'One of the piano`s greatest strengths is its versatility. Whether you`re interested in classical music, jazz, pop, or any other genre, the piano can accommodate your musical preferences. Its wide range and ability to produce both melody and harmony make it an ideal instrument for exploring various styles. Whether you want to master Beethoven`s symphonies, perform your favorite pop songs, or experiment with jazz improvisation, the piano provides the perfect platform to delve into the music of your choice. This versatility ensures that every pianist, regardless of their taste or skill level, can find joy and satisfaction in playing the instrument.',
+  },
+];
+
+export const pricingList = [
+  {
+    id: '30',
+    onlinePrice: '$22',
+    inHomePrice: '$49',
+    price: '$100',
+    features: [
+      'Ideal for ages 4-9',
+      'Affordable',
+      'Short and focused',
+      'Perfect for less practice time',
+    ],
+  },
+  {
+    id: '45',
+    onlinePrice: '$29',
+    inHomePrice: '$59',
+    price: '$200',
+    features: [
+      'Great for the total beginner',
+      'Balanced duration',
+      'For the hobbyist',
+      'Best starting point',
+    ],
+  },
+  {
+    id: '60',
+    onlinePrice: '$45',
+    inHomePrice: '$69',
+    price: '$300',
+    features: [
+      'Ideal for teenagers or adults',
+      'Highly comprehensive',
+      'In-depth discovery',
+      'For committed learners',
+    ],
   },
 ];

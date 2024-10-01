@@ -1,5 +1,6 @@
 'use client';
 import { zodResolver } from '@hookform/resolvers/zod';
+import React from 'react';
 import { SubmitHandler, useForm, useFormContext } from 'react-hook-form';
 import { z } from 'zod';
 
@@ -129,7 +130,7 @@ function Inputfield({ isSubmitting }: { isSubmitting: boolean }) {
               aria-disabled={isSubmitting}
               placeholder='Your Name *'
               type='text'
-              className='mb-[13px]'
+              className='mb-[13px] font-bold'
               {...register('name')}
             />
           </FormControl>
@@ -156,7 +157,7 @@ function Emailfield({ isSubmitting }: { isSubmitting: boolean }) {
               aria-disabled={isSubmitting}
               placeholder='Your Email *'
               type='email'
-              className='mb-[13px]'
+              className='mb-[13px] font-bold'
               {...register('email')}
             />
           </FormControl>
@@ -183,7 +184,7 @@ function Phonefield({ isSubmitting }: { isSubmitting: boolean }) {
               aria-disabled={isSubmitting}
               placeholder='Your Phone'
               type='text'
-              className='mb-[13px]'
+              className='mb-[13px] font-bold'
               {...register('phone')}
             />
           </FormControl>
@@ -207,7 +208,7 @@ function InquiryTypeField({ isSubmitting }: { isSubmitting: boolean }) {
 
   return (
     <div className='mb-2 text-secondary-rhapsody'>
-      <h3 className='mb-4 text-lg  font-medium'>
+      <h3 className='mb-4 text-lg  font-bold'>
         What is the nature of your inquiry?
       </h3>
       <div className='space-y-4'>
@@ -227,7 +228,9 @@ function InquiryTypeField({ isSubmitting }: { isSubmitting: boolean }) {
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
-                  <FormDescription>{inquiryDescription}</FormDescription>
+                  <FormDescription className='font-semibold'>
+                    {inquiryDescription}
+                  </FormDescription>
                 </div>
               </FormControl>
             </FormItem>
@@ -254,7 +257,7 @@ function InstrumentField({ isSubmitting }: { isSubmitting: boolean }) {
             aria-disabled={isSubmitting}
           >
             <FormControl>
-              <SelectTrigger className='mb-[13px]'>
+              <SelectTrigger className='mb-[13px] font-bold'>
                 <SelectValue placeholder='Select an Instrument' />
               </SelectTrigger>
             </FormControl>
@@ -290,7 +293,7 @@ function LessonDurationField({ isSubmitting }: { isSubmitting: boolean }) {
             aria-disabled={isSubmitting}
           >
             <FormControl>
-              <SelectTrigger className='mb-[13px]'>
+              <SelectTrigger className='mb-[13px] font-bold'>
                 <SelectValue placeholder='Select a duration' />
               </SelectTrigger>
             </FormControl>
@@ -323,7 +326,7 @@ function MessageField({ isSubmitting }: { isSubmitting: boolean }) {
               disabled={isSubmitting}
               aria-disabled={isSubmitting}
               placeholder='Type your message'
-              className='min-h-[223px] mb-[13px]'
+              className='min-h-[223px] mb-[13px] font-bold'
               {...register('message')}
             />
           </FormControl>
