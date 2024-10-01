@@ -5,6 +5,7 @@ import OtherInstruments from '@/components/instrument/other-instruments';
 import PageLayout from '@/components/layout';
 
 import bg_banner from '@/assets/images/violin-hero-image.jpg';
+import { pricingList } from '@/constant/config';
 
 const sellerContent = [
   {
@@ -24,41 +25,6 @@ const sellerContent = [
     header: 'Rich Historical and Cultural Significance',
     description:
       'The violin has a rich history and is deeply rooted in various cultures around the world. By learning the violin, you connect with a long tradition of musicianship and cultural heritage. Whether you’re playing classical masterpieces or folk tunes, the violin allows you to be part of a timeless musical legacy.',
-  },
-];
-
-const pricingList = [
-  {
-    id: '35',
-    minutes: 'Minutes Per Session',
-    price: '$100',
-    features: [
-      'Perfect for beginners',
-      'All age groups',
-      'Ideal for hobbyists/weekend warriors',
-      'Short and crisp',
-      'Affordable price',
-    ],
-  },
-  {
-    id: '50',
-    minutes: 'Minutes Per Session',
-    price: '$200',
-    features: [
-      'Ideal for any level',
-      'Best option for Grade Exam preparations',
-      'Best Value',
-    ],
-  },
-  {
-    id: '60',
-    minutes: 'Minutes Per Session',
-    price: '$300',
-    features: [
-      'For aspiring professionals',
-      'In-depth focus',
-      'Best option for seniors/adult learners',
-    ],
   },
 ];
 

@@ -5,6 +5,7 @@ import OtherInstruments from '@/components/instrument/other-instruments';
 import PageLayout from '@/components/layout';
 
 import bg_banner from '@/assets/images/drums-hero-image.jpg';
+import { pricingList } from '@/constant/config';
 
 const sellerContent = [
   {
@@ -24,41 +25,6 @@ const sellerContent = [
     header: 'Boosts Creativity and Stress Relief',
     description:
       'Drumming is a powerful outlet for creativity and stress relief. The physical act of playing the drums can release tension and provide a sense of accomplishment. Moreover, experimenting with different beats and rhythms encourages creativity, allowing you to express yourself in unique and innovative ways.',
-  },
-];
-
-const pricingList = [
-  {
-    id: '35',
-    minutes: 'Minutes Per Session',
-    price: '$100',
-    features: [
-      'Perfect for beginners',
-      'All age groups',
-      'Ideal for hobbyists/weekend warriors',
-      'Short and crisp',
-      'Affordable price',
-    ],
-  },
-  {
-    id: '50',
-    minutes: 'Minutes Per Session',
-    price: '$200',
-    features: [
-      'Ideal for any level',
-      'Best option for Grade Exam preparations',
-      'Best Value',
-    ],
-  },
-  {
-    id: '60',
-    minutes: 'Minutes Per Session',
-    price: '$300',
-    features: [
-      'For aspiring professionals',
-      'In-depth focus',
-      'Best option for seniors/adult learners',
-    ],
   },
 ];
 
